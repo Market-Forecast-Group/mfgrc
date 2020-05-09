@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Label" x="49" y="47" text="Requesting data from eSignal" measuredWidth="146" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="24" y="47" width="305" height="138" measuredWidth="305" measuredHeight="138" background="#d9d2e9"/>
+  <widgets xsi:type="model:Label" x="34" y="154" text="Updating Indicator" measuredWidth="186" measuredHeight="31">
+    <font size="14" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="34" y="56" width="279" height="89" measuredWidth="279" measuredHeight="89"/>
+  <widgets xsi:type="model:Label" x="44" y="114" text="Warming-Up" measuredWidth="76" measuredHeight="21">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="44" y="67" width="253" height="48" measuredWidth="253" measuredHeight="48" background="#cfe2f3"/>
+  <widgets xsi:type="model:Label" x="54" y="82" text="Requesting data from eSignal " measuredWidth="175" measuredHeight="21">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="14" y="277" width="211" height="36" measuredWidth="211" measuredHeight="36"/>
+  <widgets xsi:type="model:Label" x="24" y="283" width="201" text="Trading (Manual Strategy, IB)" measuredWidth="201" measuredHeight="21">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:VLine" x="80" y="184" measuredWidth="6" measuredHeight="100"/>
+  <widgets xsi:type="model:Group" x="158" y="230" width="219" height="40" measuredWidth="219" measuredHeight="40"/>
+  <widgets xsi:type="model:Label" x="168" y="242" width="209" text="Trading (Auto Strategy, Simulated)" measuredWidth="209" measuredHeight="21">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:VLine" x="232" y="184" height="47" measuredWidth="6" measuredHeight="47"/>
+  <widgets xsi:type="model:Label" x="455" y="57" text="Requesting data from eSignal" measuredWidth="146" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="430" y="57" width="305" height="138" measuredWidth="305" measuredHeight="138" background="#c27ba0"/>
+  <widgets xsi:type="model:Label" x="440" y="164" text="Updating Indicator" measuredWidth="186" measuredHeight="31">
+    <font size="14" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="440" y="66" width="279" height="89" measuredWidth="279" measuredHeight="89"/>
+  <widgets xsi:type="model:Label" x="450" y="124" text="Warming-Up" measuredWidth="76" measuredHeight="21">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="450" y="77" width="253" height="48" measuredWidth="253" measuredHeight="48" background="#d5a6bd"/>
+  <widgets xsi:type="model:Label" x="460" y="92" text="Requesting data from IB" measuredWidth="143" measuredHeight="21">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="404" y="293" width="253" height="44" measuredWidth="253" measuredHeight="44"/>
+  <widgets xsi:type="model:Label" x="414" y="304" width="225" text="Trading (Manual Strategy, Simulated)" measuredWidth="225" measuredHeight="21">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:VLine" x="486" y="194" measuredWidth="6" measuredHeight="100"/>
+  <widgets xsi:type="model:Group" x="564" y="236" width="237" height="44" measuredWidth="237" measuredHeight="44"/>
+  <widgets xsi:type="model:Label" x="574" y="242" width="211" text="Trading (Auto Strategy, IB)" measuredWidth="211" measuredHeight="21">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:VLine" x="638" y="194" height="47" measuredWidth="6" measuredHeight="47"/>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

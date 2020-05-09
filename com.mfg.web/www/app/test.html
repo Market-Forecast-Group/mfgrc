@@ -1,0 +1,27 @@
+<html>
+
+<body>
+
+    <script src="services/data-view.js"></script>
+    <script>
+        var ws = new WebSocket('ws://localhost:1982/test');
+        window.theBuffer = null;
+        ws.binaryType = 'arraybuffer';
+        ws.onmessage = function (msg) {
+            window.theBuffer = msg.data;
+
+            var i, len, dataview, r;
+
+            dataview = new DataView(msg.data);
+
+            len = MFGDataView.getPriceRecordCount(dataview.byteLength);
+
+            for (i = 0; i < len; i += 1) {
+                r = MFGDataView.getPriceRecord(dataview, i);
+                console.log(r);
+            }
+        };
+    </script>
+</body>
+
+</html>

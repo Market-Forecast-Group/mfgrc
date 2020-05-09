@@ -1,0 +1,64 @@
+sync.bat
+sync.sh
+pul.sh
+user_dic
+derby.log
+syntax: regexp
+^com\.mfg\.strategy\.builder/src/com/mfg/strategy/builder/app/Application\.java$
+syntax: regexp
+^com\.mfg\.strategy\.builder/src/com/mfg/strategy/builder/app/ApplicationActionBarAdvisor\.java$
+syntax: regexp
+^com\.mfg\.strategy\.builder/src/com/mfg/strategy/builder/app/ApplicationWorkbenchAdvisor\.java$
+syntax: regexp
+^com\.mfg\.strategy\.builder/src/com/mfg/strategy/builder/app/ApplicationWorkbenchWindowAdvisor\.java$
+syntax: glob
+*.so
+*.exe
+Setup\setup_exe\jre
+Setup\setup_exe\MFG
+Setup\base\MFG
+*.jar
+*.zip
+
+ext/json.jar
+*.class
+*.dll
+*.so
+*.orig
+Thumbs.db
+*.bak
+*.wav
+
+.metadata
+
+UIScreen/autostrategybullpen.screen
+com.mfg.chart/nativewindow_win32.dll
+com.mfg.chart/nativewindow_awt.dll
+com.mfg.chart/jogl_desktop.dll
+com.mfg.chart/jogl_cg.dll
+com.mfg.chart/gluegen-rt.dll
+com.mfg.web/www/_resources
+com.mfg.web/www/app/bower_components/datatables-plugins
+com.mfg.web/www/app/bower_components/datatables-responsive
+com.mfg.web/www/app/bower_components/datatables
+com.mfg.web/www/app/bower_components/flot.tooltip
+com.mfg.web/www/app/bower_components/flot
+com.mfg.web/www/app/bower_components/metisMenu/src
+com.mfg.web/www/app/bower_components/morrisjs
+com.mfg.web/www/app/bower_components/ng-websocket
+syntax: regexp
+.*/doc/.*
+
+.*/lib/.*\.jar
+
+.*/lib/.*\.dll
+.*/bin/*
+
+#backup vim files
+.*~$
+.swp$
+.rej$
+
+glob:com.mfg.rc/.project
+com.mfg.web/www/node_modules
+com.mfg.web/old_www

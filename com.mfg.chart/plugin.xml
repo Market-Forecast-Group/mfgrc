@@ -1,0 +1,1334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="tools" name="tools" schema="schema/tools.exsd"/>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="com.mfg.chart.category"
+            name="Chart">
+      </category>
+      <view
+            allowMultiple="true"
+            category="com.mfg.chart.category"
+            class="com.mfg.chart.ui.views.ChartDBBrowserView"
+            icon="icons/table.gif"
+            id="com.mfg.chart.ui.views.ChartMDBSessionView"
+            name="Chart DB Browser"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="true"
+            category="com.mfg.chart.category"
+            class="com.mfg.chart.ui.views.ChartView"
+            fastViewWidthRatio="0.5"
+            icon="icons/trade.jpg"
+            id="com.mfg.chart.ui.views.ChartView"
+            name="Chart"
+            restorable="true">
+      </view>
+   </extension>
+	<extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.mfg.chart.preferences.ChartPreferencePage"
+            id="com.mfg.chart.preferences.ChartPreferencePage"
+            name="Chart">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="com.mfg.chart.ChartStartup">
+      </startup>
+   </extension>
+   <extension
+         id="id1"
+         point="com.mfg.logger.application.components">
+      <component
+            id="com.mfg.chart.logger.realTimeChart"
+            name="Real-Time Chart">
+      </component>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            description="Commands to manipulate the Chart"
+            id="com.mfg.chart.commands.ChartCategory"
+            name="Chart Commands">
+      </category>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ZoomInHandler"
+            description="Zoom in a little the Time range"
+            id="com.mfg.chart.commands.zoomIn"
+            name="Chart Zoom In">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ZoomOutHandler"
+            description="Zoom out a little the Time range"
+            id="com.mfg.chart.commands.zoomOut"
+            name="Chart Zoom Out">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ScrollLeftHandler"
+            description="Chart Scroll Left"
+            id="com.mfg.chart.commands.scrollLeft"
+            name="Chart Scroll Left">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ScrollRightHandler"
+            description="Chart Half Scroll Right"
+            id="com.mfg.chart.commands.scrollRight"
+            name="Chart Scroll Right">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ScrollLittleLeftHandler"
+            description="Chart Half Scroll Right"
+            id="com.mfg.chart.commands.scrollLittleLeft"
+            name="Chart Half Scroll Left">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ScrollLittleRightHandler"
+            description="Chart Half Scroll Right"
+            id="com.mfg.chart.commands.scrollLittleRight"
+            name="Chart Half Scroll Right">
+      </command>
+      
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ScrollUpDownHandler"
+            description="Chart Scroll Up"
+            id="com.mfg.chart.commands.scrollUp"
+            name="Chart Scroll Up">
+      </command>
+      
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ScrollUpDownHandler"
+            description="Chart Scroll Up"
+            id="com.mfg.chart.commands.scrollDown"
+            name="Chart Scroll Down">
+      </command>
+      
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ExpandRangeHandler"
+            description="Chart Expand Range"
+            id="com.mfg.chart.commands.expandRange"
+            name="Chart Expand Range">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ContractRangeHandler"
+            description="Chart Contract Range"
+            id="com.mfg.chart.commands.contractRange"
+            name="Chart Contract Range">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SwitchLayerHandler"
+            description="Chart Switch Data Layer Up"
+            id="com.mfg.chart.commands.switchLayerUp"
+            name="Chart Switch Data Layer Up">
+      </command>
+       <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SwitchLayerHandler"
+            description="Chart Switch Data Layer To Range"
+            id="com.mfg.chart.commands.switchLayer_Range"
+            name="Chart Switch Data Layer To Range">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SwitchLayerHandler"
+            description="Chart Switch Data Layer To Minute"
+            id="com.mfg.chart.commands.switchLayer_Minute"
+            name="Chart Switch Data Layer To Minute">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SwitchLayerHandler"
+            description="Chart Switch Data Layer To Daily"
+            id="com.mfg.chart.commands.switchLayer_Daily"
+            name="Chart Switch Data Layer To Daily">
+      </command>
+       <command
+            defaultHandler="com.mfg.chart.commands.SwapFakePhysicalTimesHandler"
+            description="Swap to Fake/Physical Times"
+            id="com.mfg.chart.commands.swapPhysicalFakeTimes"
+            name="Swap to Fake/Physical Times">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SwitchLayerHandler"
+            description="Chart Switch Data Layer Down"
+            id="com.mfg.chart.commands.switchLayerDown"
+            name="Chart Switch Data Layer Down">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ShowIndicatorLayerHandler"
+            description="Chart Show ZZ"
+            id="com.mfg.chart.commands.showLayer.Zz"
+            name="Chart Show ZZ">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ShowIndicatorLayerHandler"
+            description="Chart Show Markers (Pivots)"
+            id="com.mfg.chart.commands.showLayer.Pivots"
+            name="Chart Show Markers (Pivots)">
+      </command>
+       <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ShowIndicatorLayerHandler"
+            description="Chart Show Auto Trend Lines"
+            id="com.mfg.chart.commands.showLayer.AutoTrendLines"
+            name="Chart Show Auto Trend Lines">
+      </command>
+       <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ShowAllIndicatorLayerHandler"
+            description="Chart Show All Indicator"
+            id="com.mfg.chart.commands.showAllIndicatorLayer"
+            name="Chart Show All Indicator">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+           defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 1"
+            id="com.mfg.chart.commands.selectScale_1"
+            name="Chart Select Scale 1">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+           defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 2"
+            id="com.mfg.chart.commands.selectScale_2"
+            name="Chart Select Scale 2">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+           defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 3"
+            id="com.mfg.chart.commands.selectScale_3"
+            name="Chart Select Scale 3">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 4"
+            id="com.mfg.chart.commands.selectScale_4"
+            name="Chart Select Scale 4">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 5"
+            id="com.mfg.chart.commands.selectScale_5"
+            name="Chart Select Scale 5">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 6"
+            id="com.mfg.chart.commands.selectScale_6"
+            name="Chart Select Scale 6">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 7"
+            id="com.mfg.chart.commands.selectScale_7"
+            name="Chart Select Scale 7">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 8"
+            id="com.mfg.chart.commands.selectScale_8"
+            name="Chart Select Scale 8">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 9"
+            id="com.mfg.chart.commands.selectScale_9"
+            name="Chart Select Scale 9">
+      </command>
+      
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 10"
+            id="com.mfg.chart.commands.selectScale_10"
+            name="Chart Select Scale 10">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 11"
+            id="com.mfg.chart.commands.selectScale_11"
+            name="Chart Select Scale 11">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 12"
+            id="com.mfg.chart.commands.selectScale_12"
+            name="Chart Select Scale 12">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 13"
+            id="com.mfg.chart.commands.selectScale_13"
+            name="Chart Select Scale 13">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 14"
+            id="com.mfg.chart.commands.selectScale_14"
+            name="Chart Select Scale 14">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 15"
+            id="com.mfg.chart.commands.selectScale_15"
+            name="Chart Select Scale 15">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 16"
+            id="com.mfg.chart.commands.selectScale_16"
+            name="Chart Select Scale 16">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 17"
+            id="com.mfg.chart.commands.selectScale_17"
+            name="Chart Select Scale 17">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 18"
+            id="com.mfg.chart.commands.selectScale_18"
+            name="Chart Select Scale 18">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SelectScaleHandler"
+            description="Chart Select Scale 19"
+            id="com.mfg.chart.commands.selectScale_19"
+            name="Chart Select Scale 19">
+      </command>
+      
+      
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.EnableFiltersHandler"
+            description="Chart Enable Filter"
+            id="com.mfg.chart.commands.enableFilter"
+            name="Chart Enable Filter">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ShowPriceHandler"
+            description="Chart Show Price"
+            id="com.mfg.chart.commands.showPrices"
+            name="Chart Show Price">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ShowAllPricesHandle"
+            description="Chart Show All Prices"
+            id="com.mfg.chart.commands.showAllPrices"
+            name="Chart Show All Prices">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ScrollingOnOffHandler"
+            description="Chart Scrolling On/Off"
+            id="com.mfg.chart.commands.scrolling"
+            name="Real-Time Scrolling">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ScrollToStartHandler"
+            description="Chart Scroll To Start"
+            id="com.mfg.chart.commands.ScrollToStartHandler"
+            name="Chart Scroll To Start">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ScrollToEndHandler"
+            description="Chart Scroll To Start"
+            id="com.mfg.chart.commands.ScrollToEndHandler"
+            name="Chart Scroll To End">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SnappingOverPricesHandler"
+            description="Chart Crosshair Snapping Over Prices"
+            id="com.mfg.chart.commands.SnappingOverPricesHandler"
+            name="Chart Crosshair Snapping Over Prices">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.TurnOnOffAutorangeHandler"
+            description="Chart Auto-range On/Off"
+            id="com.mfg.chart.commands.turnOnOffAutorange"
+            name="Chart Auto-range On/Off">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.AutorangeByPricesOrProbsHandler"
+            description="Chart Auto-range Prices or Probs"
+            id="com.mfg.chart.commands.autorangeByPricesOrProbs"
+            name="Chart Auto-range Prices or Probs">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ShowIndicatorLayerHandler"
+            description="Chart Show Bands"
+            id="com.mfg.chart.commands.showLayer.Bands"
+            name="Chart Show Bands">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ShowIndicatorLayerHandler"
+            description="Chart Show Auto Time Lines"
+            id="com.mfg.chart.commands.showLayer.AutoTimeLines"
+            name="Chart Auto Time Lines">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ShowIndicatorLayerHandler"
+            description="Chart Show Probabilities"
+            id="com.mfg.chart.commands.showLayer.Probs"
+            name="Chart Show Probabilities">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ShowIndicatorLayerHandler"
+            description="Chart Show Channels"
+            id="com.mfg.chart.commands.showLayer.Channels"
+            name="Chart Show Channels">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.RefreshChartHandler"
+            description="Chart Refresh"
+            id="com.mfg.chart.commands.refreshChart"
+            name="Chart Refresh">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ScrollToTimeHandler"
+            description="Chart Scroll To Time"
+            id="com.mfg.chart.commands.scrollToTime"
+            name="Chart Scroll To Time">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.SaveScreenshotHandler"
+            description="Chart Save Screenshot"
+            id="com.mfg.chart.commands.saveScreenshot"
+            name="Chart Save Screenshot">
+      </command>
+      <command
+            defaultHandler="com.mfg.chart.commands.OpenSelectionInChartHandler"
+            description="Open the selected element in a chart."
+            id="com.mfg.chart.commands.openSelectionInChart"
+            name="Open Chart">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.EnableFiltersHandler"
+            id="com.mfg.chart.commands.enableDisableFilters"
+            name="Chart Restore Rules">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ChartActionHandler"
+            description="Show Time Lines"
+            id="com.mfg.chart.commands.showTimeLines"
+            name="Time Lines">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ChartActionHandler"
+            description="Harmony Lines"
+            id="com.mfg.chart.commands.showHarmonyLines"
+            name="Show Harmony Lines">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ShowHarmonyLinesHandler"
+            description="Swap Harmony Lines Ratio"
+            id="com.mfg.chart.commands.showHarmonyLines_ratio"
+            name="Swap Ratio">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ShowHarmonyLinesHandler"
+            description="Harmony Ratio 1/2"
+            id="com.mfg.chart.commands.showHarmonyLines_2"
+            name="Show Ratio 1/2">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ShowHarmonyLinesHandler"
+            description="Harmony Ratio 1/3"
+            id="com.mfg.chart.commands.showHarmonyLines_3"
+            name="Show Ratio 1/3">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.HarmonyLinesChangeLevelHandler"
+            description="Harmony Lines Add More Extra Lines"
+            id="com.mfg.chart.commands.showHarmonyLines_up"
+            name="More Lines">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.HarmonyLinesChangeLevelHandler"
+            description="Harmony Lines Add More Extra Lines"
+            id="com.mfg.chart.commands.showHarmonyLines_down"
+            name="Less Lines">
+      </command>
+      
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ShowHarmonicLinesSettingsHandler"
+            description="Show Harmonic Lines Settings"
+            id="com.mfg.chart.commands.showHarmonyLines_settings"
+            name="Settings...">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.LoadChartBundleHandler"
+            description="Load from a file a bundle of data."
+            id="com.mfg.chart.commands.loadBundle"
+            name="Load Bundle...">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ExportChartBundleHandler"
+            description="Export to file a bundle of data."
+            id="com.mfg.chart.commands.exportBundle"
+            name="Export Bundle...">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ChangeRangesHandler"
+            description="Chart Change Ranges"
+            id="com.mfg.chart.commands.changeRanges"
+            name="Change Ranges">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ChartActionHandler"
+            description="Polylines Tool"
+            id="com.mfg.chart.commands.showPolylines"
+            name="Polylines Tool">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.ChartActionHandler"
+            id="com.mfg.chart.commands.lineTool"
+            name="Line Tool">            
+      </command>
+      <command
+            defaultHandler="com.mfg.chart.commands.ChartActionHandler"
+            id="com.mfg.chart.commands.trendLines"
+            name="Trend Lines">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.DiscardLineFirstAnchorHandler"
+            id="com.mfg.chart.commands.discardFirstAnchor"
+            name="Discard First Anchor">
+      </command>
+      <command
+            id="com.mfg.chart.commands.polylinesEquation_1"
+            name="Polyline Equation - Linear Regression">
+      </command>
+      <command
+            id="com.mfg.chart.commands.polylinesEquation_2"
+            name="Polyline Equation - Polyline 2">
+      </command>
+      <command
+            id="com.mfg.chart.commands.polylinesEquation_3"
+            name="Polyline Equation - Polyline 3">
+      </command>
+      <command
+            id="com.mfg.chart.commands.polylinesEquation_4"
+            name="Polyline Equation - Polyline 4">
+      </command>
+      <command
+            id="com.mfg.chart.commands.polylinesDrawPath"
+            name="Draw Path"
+            defaultHandler="com.mfg.chart.commands.PolylineDrawPathHandler">
+      </command>
+      <command
+            id="com.mfg.chart.commands.polylinesGeneralSettings"
+            name="Settings...">
+      </command>
+      <command
+            defaultHandler="com.mfg.chart.commands.TimeLineGeneralSettingsHandler"
+            id="com.mfg.chart.commands.timeLinesGeneralSettings"
+            name="Settings...">
+      </command>
+      <command
+            categoryId="com.mfg.chart.commands.ChartCategory"
+            defaultHandler="com.mfg.chart.commands.LinesGeneralSettingsHandler"
+            id="com.mfg.chart.commands.linesGeneralSettings"
+            name="Settings...">
+      </command>
+      <command
+            defaultHandler="com.mfg.chart.commands.ChartSettingsHandler"
+            id="com.mfg.chart.commands.chartsettings"
+            name="Settings...">
+      </command>
+      <command
+            defaultHandler="com.mfg.chart.commands.TrendLinesSettingsHandler"
+            id="com.mfg.chart.commands.trendLinesSettings"
+            name="Settings...">
+      </command>
+      <command
+            description="Change the orders"
+            id="com.mfg.symbols.commands.tradeTool"
+            name="Trade Tool">
+      </command>
+      <command
+            defaultHandler="com.mfg.chart.commands.ChartActionHandler"
+            id="com.mfg.chart.commands.volume"
+            name="Volume">
+      </command>
+      <command
+            defaultHandler="com.mfg.chart.commands.ChartActionHandler"
+            id="com.mfg.chart.commands.timesoftheday"
+            name="Times of the Day">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+       <key
+            commandId="com.mfg.chart.commands.swapPhysicalFakeTimes"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="Ctrl+T">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.scrollToTime"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="T">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.zoomIn"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="I">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.refreshChart"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="Alt+R">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.zoomOut"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="O">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.scrollLeft"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="ARROW_LEFT">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.scrollRight"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="ARROW_RIGHT">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.scrollLittleLeft"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="Shift+ARROW_LEFT">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.scrollLittleRight"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="Shift+ARROW_RIGHT">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.expandRange"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="Shift+ARROW_DOWN">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.contractRange"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="Shift+ARROW_UP">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.switchLayerUp"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="Alt+ARROW_UP">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.switchLayerDown"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="Alt+ARROW_DOWN">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.scrollUp"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="Ctrl+ARROW_UP">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.scrollDown"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="Ctrl+ARROW_DOWN">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.showLayer.Bands"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="B">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.showLayer.AutoTimeLines"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="J">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.showLayer.Pivots"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M">
+      </key>
+       <key
+            commandId="com.mfg.chart.commands.showLayer.AutoTrendLines"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="L">
+      </key>
+       <key
+            commandId="com.mfg.chart.commands.selectScale_1"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="1">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.selectScale_2"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="2">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.selectScale_3"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="3">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.selectScale_4"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="4">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.selectScale_5"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="5">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.selectScale_6"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="6">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.selectScale_7"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="7">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.selectScale_8"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="8">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.selectScale_9"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="9">
+      </key>
+       <key
+            commandId="com.mfg.chart.commands.selectScale_10"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M2+0">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.selectScale_11"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M2+1">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.selectScale_12"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M2+2">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.selectScale_13"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M2+3">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.selectScale_14"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M2+4">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.selectScale_15"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M2+5">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.selectScale_16"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M2+6">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.selectScale_17"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M2+7">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.selectScale_18"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M2+8">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.selectScale_19"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M2+9">
+      </key>
+     
+      <!--
+      
+      contradictory with the Time Lines tool.
+       
+      <key
+            commandId="com.mfg.chart.commands.enableFilter"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="E">
+      </key>
+      -->
+      
+      <key
+            commandId="com.mfg.chart.commands.showPrices"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="P">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.showAllPrices"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="A">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.scrolling"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="U">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.ScrollToStartHandler"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="HOME">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.ScrollToEndHandler"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="END">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.SnappingOverPricesHandler"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="N">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.turnOnOffAutorange"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="Alt+A">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.autorangeByPricesOrProbs"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="X">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.showLayer.Probs"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="R">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.showLayer.Channels"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="C">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.showLayer.Zz"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="Z">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.showAllIndicatorLayer"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="V">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.enableDisableFilters"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="F">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.showTimeLines"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="E">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.showHarmonyLines"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+H">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.showHarmonyLines_ratio"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+H">
+      </key>
+      
+      <key
+            commandId="com.mfg.chart.commands.showHarmonyLines_2"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="H 2">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.showHarmonyLines_3"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="H 3">
+      </key>
+      
+      <key
+            commandId="com.mfg.chart.commands.showHarmonyLines_up"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="H ARROW_UP">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.showHarmonyLines_down"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="H ARROW_DOWN">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.changeRanges"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+R">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.showPolylines"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="Y">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.lineTool"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="K">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.discardFirstAnchor"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="ESC">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.chartsettings"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="S">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.trendLines"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="Q">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.volume"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+V">
+      </key>
+      <key
+            commandId="com.mfg.chart.commands.timesoftheday"
+            contextId="com.mfg.chart.contexts.chartView"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+M2+T">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.contexts">
+      <context
+            description="In Chart View"
+            id="com.mfg.chart.contexts.chartView"
+            name="In Chart View">
+      </context>
+      <context
+            description="In Chart View, Layer Menu"
+            id="com.mfg.chart.contexts.chartView.layerMenu"
+            name="In Chart View, Layer Menu"
+            parentId="com.mfg.chart.contexts.chartView">
+      </context>
+      
+      <context
+            description="In Chart View, Layer Menu, Scale"
+            id="com.mfg.chart.contexts.chartView.layerMenu.scale"
+            name="In Chart View, Layer Menu, Scale"
+            parentId="com.mfg.chart.contexts.chartView.layerMenu">
+      </context>
+      <context
+            description="In RT Chart View"
+            id="com.mfg.chart.contexts.chartView.realtime"
+            name="In RT Chart View"
+            parentId="com.mfg.chart.contexts.chartView">
+      </context>
+      <context
+            description="Time Lines tool is selected"
+            id="com.mfg.chart.contexts.chartView.timeLinesTool"
+            name="In Chart View, Time Lines Tool"
+            parentId="com.mfg.chart.contexts.chartView">
+      </context>
+      <context
+            description="Trend Lines tool is selected"
+            id="com.mfg.chart.contexts.chartView.trendLines"
+            name="In Chart View, Trend Lines Tool"
+            parentId="com.mfg.chart.contexts.chartView">
+      </context>
+      <context
+            id="com.mfg.chart.contexts.chartView.indicator"
+            name="In Chart View, Indicator"
+            parentId="com.mfg.chart.contexts.chartView">
+      </context>
+      <context
+            id="com.mfg.chart.contexts.chartView.realtime"
+            name="In Chart View, Realtime"
+            parentId="com.mfg.chart.contexts.chartView">
+      </context>
+      <context
+            description="In Chart View, Trading"
+            id="com.mfg.chart.contexts.chartView.trading"
+            name="In Chart View, Trading"
+            parentId="com.mfg.chart.contexts.chartView.indicator">
+      </context>
+      <context
+            description="In Cart Ciew, Equity"
+            id="com.mfg.chart.contexts.chartView.equity"
+            name="In Cart Ciew, Equity"
+            parentId="com.mfg.chart.contexts.chartView">
+      </context>
+      <context
+            id="com.mfg.chart.contexts.chartView.polylinesTool"
+            name="In Chart View, Indicator, Polyline"
+            parentId="com.mfg.chart.contexts.chartView.indicator">
+      </context>
+      <context
+            id="com.mfg.chart.contexts.chartView.linesTool"
+            name="In Chart View, Indicator, Line"
+            parentId="com.mfg.chart.contexts.chartView.indicator">
+      </context>
+      <context
+            id="com.mfg.chart.contexts.chartView.lineTool"
+            name="In Chart View, Line"
+            parentId="com.mfg.chart.contexts.chartView">
+      </context>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="com.mfg.chart.commands.ChartUndoRedoHandler"
+            commandId="org.eclipse.ui.edit.undo">
+         <activeWhen>
+            <with
+                  variable="activePartId">
+               <equals
+                     value="com.mfg.chart.ui.views.ChartView">
+               </equals>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="com.mfg.chart.commands.ChartUndoRedoHandler"
+            commandId="org.eclipse.ui.edit.redo">
+         <activeWhen>
+            <with
+                  variable="activePartId">
+               <equals
+                     value="com.mfg.chart.ui.views.ChartView">
+               </equals>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="com.mfg.chart.commands.DeletePointedAnchorHandler"
+            commandId="org.eclipse.ui.edit.delete">
+         <activeWhen>
+            <or>
+               <reference
+                     definitionId="com.mfg.chart.expresions.timeLinesTool">
+               </reference>
+               <reference
+                     definitionId="com.mfg.chart.expressions.polyline">
+               </reference>
+               <reference
+                     definitionId="com.mfg.chart.expressions.line">
+               </reference>
+               <reference
+                     definitionId="com.mfg.chart.expressions.trendlines">
+               </reference>
+            </or>
+         </activeWhen>
+      </handler>
+      
+      
+      <handler
+            class="com.mfg.chart.commands.PolylineGeneralSettignsHandler"
+            commandId="com.mfg.chart.commands.polylinesGeneralSettings">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.core.expressions.definitions">
+      <definition
+            id="com.mfg.chart.expresions.selectionIterateChartContent">
+         <with
+               variable="selection">
+            <iterate
+                  ifEmpty="false"
+                  operator="and">
+               <adapt
+                     type="com.mfg.chart.ui.views.IChartContentAdapter">
+               </adapt>
+            </iterate>
+         </with>
+      </definition>
+      <definition
+            id="com.mfg.chart.expresions.timeLinesTool">
+         <with
+               variable="activeContexts">
+            <iterate
+                  ifEmpty="false"
+                  operator="or">
+               <equals
+                     value="com.mfg.chart.contexts.chartView.timeLinesTool">
+               </equals>
+            </iterate>
+         </with>
+      </definition>
+      <definition
+            id="com.mfg.chart.expresions.indicator">
+         <with
+               variable="activeContexts">
+            <iterate
+                  ifEmpty="false"
+                  operator="or">
+               <equals
+                     value="com.mfg.chart.contexts.chartView.indicator">
+               </equals>
+            </iterate>
+         </with>
+      </definition>
+      <definition
+            id="com.mfg.chart.expresions.realtime">
+         <with
+               variable="activeContexts">
+            <iterate
+                  ifEmpty="false"
+                  operator="or">
+               <equals
+                     value="com.mfg.chart.contexts.chartView.realtime">
+               </equals>
+            </iterate>
+         </with>
+      </definition>
+      <definition
+            id="com.mfg.chart.expressions.trading">
+         <with
+               variable="activeContexts">
+            <iterate
+                  ifEmpty="false"
+                  operator="or">
+               <equals
+                     value="com.mfg.chart.contexts.chartView.trading">
+               </equals>
+            </iterate>
+         </with>
+      </definition>
+      <definition
+            id="com.mfg.chart.expressions.notempty">
+         <with
+               variable="activeContexts">
+            <iterate
+                  ifEmpty="false"
+                  operator="or">
+               <equals
+                     value="com.mfg.chart.contexts.chartView">
+               </equals>
+            </iterate>
+         </with>
+      </definition>
+      <definition
+            id="com.mfg.chart.expressions.equity">
+         <with
+               variable="activeContexts">
+            <iterate
+                  ifEmpty="false"
+                  operator="or">
+               <equals
+                     value="com.mfg.chart.contexts.chartView.equity">
+               </equals>
+            </iterate>
+         </with>
+      </definition>
+      <definition
+            id="com.mfg.chart.expressions.polyline">
+         <with
+               variable="activeContexts">
+            <iterate
+                  ifEmpty="false"
+                  operator="or">
+               <equals
+                     value="com.mfg.chart.contexts.chartView.polylinesTool">
+               </equals>
+            </iterate>
+         </with>
+      </definition>
+      <definition
+            id="com.mfg.chart.expressions.line">
+         <with
+               variable="activeContexts">
+            <iterate
+                  ifEmpty="false"
+                  operator="or">
+               <equals
+                     value="com.mfg.chart.contexts.chartView.lineTool">
+               </equals>
+            </iterate>
+         </with>
+      </definition>
+      <definition
+            id="com.mfg.chart.expressions.trendlines">
+         <with
+               variable="activeContexts">
+            <iterate
+                  ifEmpty="false"
+                  operator="or">
+               <equals
+                     value="com.mfg.chart.contexts.chartView.trendLines">
+               </equals>
+            </iterate>
+         </with>
+      </definition>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.adapters">
+      <factory
+            adaptableType="java.io.File"
+            class="com.mfg.chart.adapters.ChartBundleAdapterFactory">
+         <adapter
+               type="com.mfg.chart.ui.views.IChartContentAdapter">
+         </adapter>
+      </factory>
+   </extension>
+   <extension
+         point="com.mfg.chart.tools">
+      <tool
+            class="com.mfg.chart.ui.interactive.TimeLinesToolFactory">
+      </tool>
+      <tool
+            class="com.mfg.chart.ui.interactive.HarmonicLinesToolFactory">
+      </tool>
+      <tool
+            class="com.mfg.chart.ui.interactive.PolylineToolFactory">
+      </tool>
+      <tool
+            class="com.mfg.chart.ui.interactive.LineToolFactory">
+      </tool>
+      <tool
+            class="com.mfg.chart.TrendLinesToolFactory">
+      </tool>     
+      <tool
+            class="com.mfg.chart.ui.interactive.ForecastingToolFactory">
+      </tool> 
+   </extension>
+</plugin>

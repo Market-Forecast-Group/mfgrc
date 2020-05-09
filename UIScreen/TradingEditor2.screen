@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:TabbedPane" x="32" y="40" width="386" height="257" text="Trade 1" measuredWidth="386" measuredHeight="257" selection="0">
+    <items x="10" y="0" width="57" height="23" text="Trade 1"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="32" y="63" width="386" height="234" text="Overview,Trading,Manual Strategy" measuredWidth="386" measuredHeight="234" selection="0" position="bottom">
+    <items x="10" y="211" width="66" height="23" text="Overview"/>
+    <items x="76" y="211" width="56" height="23" text="Trading"/>
+    <items x="132" y="211" width="99" height="23" text="Manual Strategy"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="42" y="80" width="359" text="Trading" measuredWidth="359" measuredHeight="100"/>
+  <widgets xsi:type="model:Group" x="42" y="192" width="199" height="58" text="Realtime Indicator" measuredWidth="199" measuredHeight="58"/>
+  <widgets xsi:type="model:Link" x="270" y="210" text="Start Trade" measuredWidth="58" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" x="270" y="230" text="Open Chart" measuredWidth="59" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Combo" x="52" y="218" width="179" text="Realtime Indicator 1" measuredWidth="179" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tooltip" x="160" y="171" text="Select the connect-to Realtime Indicator" measuredWidth="203" measuredHeight="38" background="#ffff00">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:ScratchOut" x="64" y="105" width="307" measuredWidth="307" measuredHeight="50" annotation="true"/>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

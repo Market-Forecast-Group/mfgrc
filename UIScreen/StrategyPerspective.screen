@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Rectangle" x="16" y="16" width="1073" height="673" measuredWidth="1073" measuredHeight="673">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Rectangle" x="16" y="16" width="282" height="673" measuredWidth="282" measuredHeight="673">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="16" y="19" width="282" height="670" text="MFG Explorer" measuredWidth="282" measuredHeight="670" selection="0">
+    <items x="10" y="0" width="84" height="23" text="MFG Explorer"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="297" y="477" width="792" height="212" text="Properties, MFG Log" measuredWidth="792" measuredHeight="212" selection="0">
+    <items x="10" y="0" width="69" height="23" text="Properties"/>
+    <items x="79" y="0" width="61" height="23" text="MFG Log"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="297" y="19" width="792" height="459" text="Strategy Builder" measuredWidth="792" measuredHeight="459" selection="0">
+    <items x="10" y="0" width="97" height="23" text="Strategy Builder"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Accordion" x="297" y="68" width="236" height="410" text="Events&#xA;Commands&#xA;Binding Conditions&#xA;AVG Rules" measuredWidth="236" measuredHeight="410" selection="1">
+    <items x="0" y="2" width="236" height="24" text="Events"/>
+    <items x="0" y="26" width="236" height="24" text="Commands"/>
+    <items x="0" y="362" width="236" height="24" text="Binding Conditions"/>
+    <items x="0" y="386" width="236" height="24" text="AVG Rules"/>
+  </widgets>
+  <widgets xsi:type="model:Rectangle" x="297" y="39" width="236" height="33" measuredWidth="236" measuredHeight="33">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Rectangle" x="306" y="45" width="52" height="20" measuredWidth="52" measuredHeight="20">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="308" y="44" width="43" text="Select" measuredWidth="43" measuredHeight="21" textAlignment="Center" icon="arrow-cursor (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="336" y="130" width="30" text="Entry" measuredWidth="30" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" x="309" y="130" measuredWidth="16" measuredHeight="16" icon="redo (small)"/>
+  <widgets xsi:type="model:Label" x="336" y="157" width="22" text="Exit" measuredWidth="22" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" x="309" y="157" measuredWidth="16" measuredHeight="16" icon="undo (small)"/>
+  <widgets xsi:type="model:Label" x="336" y="188" width="43" text="Close All" measuredWidth="43" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" x="302" y="182" measuredWidth="32" measuredHeight="32" icon="unselected (large)"/>
+  <widgets xsi:type="model:Icon" x="309" y="190" measuredWidth="16" measuredHeight="16" icon="stop-media (small)"/>
+  <widgets xsi:type="model:Icon" x="302" y="150" measuredWidth="32" measuredHeight="32" icon="unselected (large)"/>
+  <widgets xsi:type="model:Icon" x="301" y="122" measuredWidth="32" measuredHeight="32" icon="unselected (large)"/>
+  <widgets xsi:type="model:Label" x="336" y="220" width="57" text="Stop &amp; Rev" measuredWidth="57" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" x="302" y="215" measuredWidth="32" measuredHeight="32" icon="unselected (large)"/>
+  <widgets xsi:type="model:Icon" x="309" y="223" measuredWidth="16" measuredHeight="16" icon="stop-media (small)"/>
+  <widgets xsi:type="model:TabbedPane" x="16" y="477" width="282" height="212" text="Outline" measuredWidth="282" measuredHeight="212" selection="0">
+    <items x="10" y="0" width="54" height="23" text="Outline"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tree" x="16" y="41" width="282" height="437" text="Strategies&#xA;-SimpleEntryExit.mfgflow&#xA;Trade Configurations&#xA;-eSignal&#xA;-IB" measuredWidth="282" measuredHeight="437">
+    <items x="0" y="5" width="282" height="20" text="Strategies"/>
+    <items x="0" y="25" width="282" height="20" text="-SimpleEntryExit.mfgflow"/>
+    <items x="0" y="45" width="282" height="20" text="Trade Configurations"/>
+    <items x="0" y="65" width="282" height="20" text="-eSignal"/>
+    <items x="0" y="85" width="282" height="20" text="-IB"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

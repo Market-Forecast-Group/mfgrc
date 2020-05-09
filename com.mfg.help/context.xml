@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contexts>
+	<context id="chartContext" title="MFG Charts">
+    <description>General chart views</description>
+  <topic href="html/chartkeys/chartkeys.html" label="Chart Keys"/>
+	</context>
+ <context id="indicatorContext" title="Indicator">
+    <description>The indicator will provide us with information that can be used to decide when to trade and in which direction.</description>
+    <topic href="html/indicator/prob1.html" label="Probabilities Perspective"/>
+    <topic href="html/indicator/prob sett.html" label="Probabilities Settings"/>
+ </context>
+ <context id="strategyBuilder" title="Strategy Builder">
+    <description>The strategy Builder is a tool that allows us to create/edit event strategies that contain trading rules to be used on the market.</description>
+    <topic href="html/strategy/Atomic Events.htm" label="Atomic Events"/>
+    <topic href="html/strategy/Commands.htm" label="Commands &amp; Conditional Commands"/>
+    <topic href="html/strategy/Events Groups.htm" label="Events Groups"/>
+    <topic label="Others"/>
+ </context>
+</contexts>
+
+

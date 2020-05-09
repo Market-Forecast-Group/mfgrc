@@ -1,0 +1,116 @@
+{
+    "bufferSize": 100,
+    "name": "Schema1",
+    "packageName": "com.mfg.dfs.serv",
+    "source": "C:/Users/Sergio/no_backup/giulio/tmpGiulio/mfgrc_eclipse_3.8.1/mfgrc/com.mfg.dfs/src",
+    "tables": [
+        {
+            "columns": [
+                {
+                    "formula": "",
+                    "name": "timeStamp",
+                    "order": "ASCENDING",
+                    "type": "LONG",
+                    "uuid": "2a0e09a0-fe51-4114-bc14-a4c3ddc9cc49",
+                    "virtual": false
+                },
+                {
+                    "formula": "",
+                    "name": "open",
+                    "order": "NONE",
+                    "type": "INTEGER",
+                    "uuid": "b2e02706-23d9-469d-b34e-d27e1976b332",
+                    "virtual": false
+                },
+                {
+                    "formula": "",
+                    "name": "type",
+                    "order": "NONE",
+                    "type": "BYTE",
+                    "uuid": "be9d28ed-1c6e-43ad-a815-696669ca3902",
+                    "virtual": false
+                },
+                {
+                    "formula": "",
+                    "name": "volFirst",
+                    "order": "NONE",
+                    "type": "INTEGER",
+                    "uuid": "4677958a-3d46-4286-98f0-538cf60b16cd",
+                    "virtual": false
+                },
+                {
+                    "formula": "",
+                    "name": "volSecond",
+                    "order": "NONE",
+                    "type": "INTEGER",
+                    "uuid": "71345807-2d8c-4b21-8a1c-e85f871b9e20",
+                    "virtual": false
+                },
+                {
+                    "formula": "$$.volFirst + $$.volSecond",
+                    "name": "volume",
+                    "order": "NONE",
+                    "type": "INTEGER",
+                    "uuid": "912ed736-b20e-4378-853e-c9b09ddf3c85",
+                    "virtual": true
+                }
+            ],
+            "name": "RangeBars",
+            "uuid": "c444fd7f-c00b-4261-8355-f30ec29b9ae9"
+        },
+        {
+            "columns": [
+                {
+                    "formula": "",
+                    "name": "timestamp",
+                    "order": "ASCENDING",
+                    "type": "LONG",
+                    "uuid": "b4c8d183-8156-40b3-b45e-35b6d52c8937",
+                    "virtual": false
+                },
+                {
+                    "formula": "",
+                    "name": "low",
+                    "order": "NONE",
+                    "type": "INTEGER",
+                    "uuid": "79d52d78-0bd7-455b-b5b0-3b6aad2ba830",
+                    "virtual": false
+                },
+                {
+                    "formula": "",
+                    "name": "to_open",
+                    "order": "NONE",
+                    "type": "SHORT",
+                    "uuid": "0e6031a8-4abe-4c29-8457-14be2edf198d",
+                    "virtual": false
+                },
+                {
+                    "formula": "",
+                    "name": "to_high",
+                    "order": "NONE",
+                    "type": "SHORT",
+                    "uuid": "55808c44-8ad4-4f5a-83c8-e5196219ce3e",
+                    "virtual": false
+                },
+                {
+                    "formula": "",
+                    "name": "to_close",
+                    "order": "NONE",
+                    "type": "SHORT",
+                    "uuid": "afd30ebe-1160-469c-94b2-6a9c8eb63997",
+                    "virtual": false
+                },
+                {
+                    "formula": "",
+                    "name": "volume",
+                    "order": "NONE",
+                    "type": "INTEGER",
+                    "uuid": "c0f92a98-d0d1-4735-9c5f-f716078ab760",
+                    "virtual": false
+                }
+            ],
+            "name": "TimeBars",
+            "uuid": "06c238ef-7bc4-40f7-8a1e-cdf5a9011f18"
+        }
+    ]
+}

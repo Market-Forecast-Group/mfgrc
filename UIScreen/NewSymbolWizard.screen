@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Window" x="88" y="72" width="534" height="419" text="New Symbol" measuredWidth="534" measuredHeight="419"/>
+  <widgets xsi:type="model:Rectangle" x="88" y="152" width="534" height="297" measuredWidth="534" measuredHeight="297">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="102" y="101" text="Symbol" measuredWidth="64" measuredHeight="27">
+    <font size="12" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="132" y="125" text="Create New Symbol" measuredWidth="99" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" x="560" y="98" measuredWidth="48" measuredHeight="48" icon="image (xlarge)"/>
+  <widgets xsi:type="model:Label" x="102" y="173" text="Name:" measuredWidth="36" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="144" y="173" width="249" text="Text field" measuredWidth="249" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="472" y="458" width="71" text="Finish" measuredWidth="71" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="548" y="458" width="63" text="Cancel" measuredWidth="63" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" x="95" y="453" measuredWidth="16" measuredHeight="16" icon="help (small)"/>
+  <widgets xsi:type="model:Label" x="109" y="236" text="Name :" measuredWidth="39" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="175" y="236" width="156" text="E-Mini S&amp;P 500" measuredWidth="156" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="109" y="269" text="Symbol :" measuredWidth="46" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="175" y="269" width="156" text="ES" measuredWidth="156" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="107" y="333" text="Tick Size :" measuredWidth="52" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Spinner" x="175" y="333" width="76" text="25" measuredWidth="76" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="107" y="366" text="Tock Value :" measuredWidth="63" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Spinner" x="175" y="367" width="76" text="12.5" measuredWidth="76" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="109" y="304" text="Loc. Symbol :" measuredWidth="69" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="175" y="304" width="156" text="ES #F" measuredWidth="156" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="107" y="401" text="Scale :" measuredWidth="37" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Spinner" x="175" y="402" width="76" text="2" measuredWidth="76" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HLine" x="102" y="208" width="499" measuredWidth="499" measuredHeight="6"/>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

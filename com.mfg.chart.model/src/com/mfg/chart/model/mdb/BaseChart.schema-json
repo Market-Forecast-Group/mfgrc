@@ -1,0 +1,885 @@
+{
+    "bufferSize": 100,
+    "packageName": "com.mfg.chart.model.mdb",
+    "schema": {
+        "name": "BaseChart",
+        "tables": [
+            {
+                "columns": [
+                    {
+                        "formula": "",
+                        "name": "time",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "4488c076-8b2e-492b-99ba-8a9ffa73eed3",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "topPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "19fb83f6-3ed5-4ff2-b281-4f7aab13937d",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "centerPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "123e327d-14ca-4a02-a14e-f51b752d87d3",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "bottomPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "284c7bba-8bc7-490b-9fca-ca30cff93b4d",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "physicalTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "0745ee9c-7d4c-4e62-9102-1c498bedbe9c",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "topRaw",
+                        "order": "NONE",
+                        "type": "LONG",
+                        "uuid": "7fbbbc88-8201-4583-a6ec-439bbc80be70",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "centerRaw",
+                        "order": "NONE",
+                        "type": "LONG",
+                        "uuid": "b4233eec-23c6-4880-8747-14fb2d3efd59",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "bottomRaw",
+                        "order": "NONE",
+                        "type": "LONG",
+                        "uuid": "ffec2584-3796-43c5-8ac8-e05c091fa567",
+                        "virtual": false
+                    }
+                ],
+                "name": "Bands",
+                "uuid": "1b11d903-f4b0-4aa5-b5d0-3665d45163e3",
+                "views": []
+            },
+            {
+                "columns": [
+                    {
+                        "formula": "",
+                        "name": "pivotPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "c850cfc3-e382-4309-92c7-daee7917d67a",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "pivotTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "78e1cf5a-f0b7-4b09-93ce-39ae05fa4c19",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "confirmPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "f497165d-d794-4406-b8a0-d34af237c410",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "confirmTime",
+                        "order": "NONE",
+                        "type": "LONG",
+                        "uuid": "9f6f3497-1b23-4899-a23d-491eb5d63619",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "timeInterval",
+                        "order": "NONE",
+                        "type": "LONG",
+                        "uuid": "d016e874-86b1-4b38-a32c-695ebf1014fa",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "isUp",
+                        "order": "NONE",
+                        "type": "BOOLEAN",
+                        "uuid": "07208ee5-8de1-473c-ae06-865b4d8a12c4",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "pivotPhysicalTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "873488a6-6190-4226-b6b0-3ba26a236688",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "confirmPhysicalTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "1d62daf3-0d63-4281-90c2-354013313f13",
+                        "virtual": false
+                    }
+                ],
+                "name": "Pivot",
+                "uuid": "3999c52c-e8c2-450b-8ac7-fd297d84e419",
+                "views": []
+            },
+            {
+                "columns": [
+                    {
+                        "formula": "",
+                        "name": "price",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "8ab7cc9b-8678-4e9d-802a-d05315a0476f",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "real",
+                        "order": "NONE",
+                        "type": "BOOLEAN",
+                        "uuid": "ffb63fea-9e3a-40ab-a3c3-9f569f74ba37",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "physicalTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "f82e8247-56ec-43f3-9260-92ce3246e8d4",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "time",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "f1c52130-57e8-43fa-88f6-cfc01cc0123d",
+                        "virtual": false
+                    }
+                ],
+                "name": "Price",
+                "uuid": "6d9681bf-d005-43e1-95b7-daf9e7295b88",
+                "views": []
+            },
+            {
+                "columns": [
+                    {
+                        "formula": "",
+                        "name": "startTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "eeacbbe8-cec4-4e6a-86d0-69e8488ff444",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "endTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "01e26af9-9b15-4e46-ad69-b0e83ac3282b",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "topStartPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "52a1767c-1f25-416e-a2d5-a9c8d7d0162e",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "topEndPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "52023e62-b696-49e1-9c64-59edcaecc3df",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "centerStartPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "1f34cb7c-5797-4d12-869b-a7aeb6676c8c",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "centerEndPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "e3369221-3b22-405a-ba22-025563ba0ffe",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "bottomStartPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "681d502b-7ad0-4ed3-87d1-5680f8bc5126",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "bottomEndPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "1be05d25-0762-43d0-a9d3-35067635c757",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "slope",
+                        "order": "NONE",
+                        "type": "BOOLEAN",
+                        "uuid": "741c2c6c-18d3-4569-a45a-b68d872dfa5a",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "startPhysicalTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "20d1d5b5-386b-4044-a3d9-c7bce3e8dbcb",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "endPhysicalTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "6dd0bb31-97e6-44d3-9e89-bcad3fb11f67",
+                        "virtual": false
+                    }
+                ],
+                "name": "Channel",
+                "uuid": "13536269-5965-4afd-8232-845b579808a1",
+                "views": []
+            },
+            {
+                "columns": [
+                    {
+                        "formula": "",
+                        "name": "time",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "c5d17ab8-dd0c-4ca2-8e24-2adc42049ded",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "price",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "f3a1f73e-c3ee-461a-b033-176832c8f6de",
+                        "virtual": false
+                    }
+                ],
+                "name": "ProbabilityPoint",
+                "uuid": "318d0774-d2af-4801-b71b-a79a668b86c6",
+                "views": []
+            },
+            {
+                "columns": [
+                    {
+                        "formula": "",
+                        "name": "time",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "0bdae203-1787-46f1-b6ed-2939141703df",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "type",
+                        "order": "NONE",
+                        "type": "BYTE",
+                        "uuid": "bbbd6176-c47e-4d40-8a8d-b2b1ff9d7be7",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "positive",
+                        "order": "NONE",
+                        "type": "BOOLEAN",
+                        "uuid": "7a78de36-85b8-46a0-86ad-22b92de2661e",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "probabilitiesCount",
+                        "order": "NONE",
+                        "type": "INTEGER",
+                        "uuid": "cca1cd2f-d5be-41b9-a991-709745eaf485",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "probabilitiesIndex",
+                        "order": "NONE",
+                        "type": "INTEGER",
+                        "uuid": "9a32411e-3f43-405f-9ca5-5abae71646bb",
+                        "virtual": false
+                    }
+                ],
+                "name": "ProbabilityInfo",
+                "uuid": "648c4570-5d1f-4cbf-829c-f0d9e3516366",
+                "views": []
+            },
+            {
+                "columns": [
+                    {
+                        "formula": "",
+                        "name": "negValue",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "70b74c6a-5bb1-4725-82a3-4115cf1b6ac4",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "posValue",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "5bb92c9a-5518-4435-b452-686aad92606e",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "time",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "cfb8673d-8ed6-4f20-95b1-4c11bd7b4bb3",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "negSwingProjection",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "c9a3bc9c-2108-4155-a230-a68dfbed229e",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "posSwingProjection",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "a7ee65e8-22ff-4bbf-870a-182a5c1ace9d",
+                        "virtual": false
+                    }
+                ],
+                "name": "TriggerExpectedValue",
+                "uuid": "84c11d87-2519-4895-b34a-a5360889f621",
+                "views": []
+            },
+            {
+                "columns": [
+                    {
+                        "formula": "",
+                        "name": "time",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "80e9a018-31b1-46be-a7c5-8f4c9b9f0388",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "price",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "d2f9c075-e98f-44ab-8d49-86e69328cb69",
+                        "virtual": false
+                    }
+                ],
+                "name": "InterpPriceProb",
+                "uuid": "0273e857-d040-48e4-979a-4e5080953773",
+                "views": []
+            },
+            {
+                "columns": [
+                    {
+                        "formula": "",
+                        "name": "time",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "21d8356f-1c0c-4c46-8e52-3d7e45acdd05",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "slope",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "3db27543-1d04-45a7-8592-7967056b78d3",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "maxslope",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "3849d275-2410-455b-8d09-c2276f2b3442",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "minslope",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "f61fa8fc-f14d-47f4-a14c-512208e0bdd2",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "maxwidth",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "af183629-3898-49ec-b5bd-4b2c6f290d1c",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "minwidth",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "e3824e82-4171-4330-8dde-1100fb9b8937",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "width",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "9a7970c2-01b7-4bc5-96ab-7f23950529bb",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "maxprice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "6f6f610f-5085-433d-b668-e8198528eb47",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "minprice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "a4061e85-d894-4852-b9b0-902117246083",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "tickslength",
+                        "order": "NONE",
+                        "type": "INTEGER",
+                        "uuid": "059252ad-4394-420a-8aed-a2e4dc60a970",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "lwratio",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "7f40b607-a017-45ff-aa1f-452410f4ecdd",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "tickspivot",
+                        "order": "NONE",
+                        "type": "INTEGER",
+                        "uuid": "35fac5bf-1be9-4f32-9daa-98e2dba2e89b",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "pricepivot",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "f975b0df-7d66-41e6-a9fa-08aa1f438339",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "ticksth",
+                        "order": "NONE",
+                        "type": "INTEGER",
+                        "uuid": "432023d5-d3f7-472a-b71d-fbe7bafac6ec",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "priceth",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "9b58e619-9ab9-4f20-b03e-726c31899042",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "goingup",
+                        "order": "NONE",
+                        "type": "BOOLEAN",
+                        "uuid": "81096ad7-7300-4785-956c-51f78c707c80",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "HHPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "d3c0c246-bf74-4df8-a2d4-f413abc2ae12",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "LLPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "7c43f8cc-eef7-4c81-b95f-33c709f0187e",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "HHTime",
+                        "order": "NONE",
+                        "type": "LONG",
+                        "uuid": "708a52ec-68a4-4c1c-9882-a671a7373590",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "LLTime",
+                        "order": "NONE",
+                        "type": "LONG",
+                        "uuid": "f6e87f90-909c-40e0-96e7-ae1616b02a1a",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "pearsonr",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "77c0b2fd-fae2-49f4-b0cd-25e5f010a710",
+                        "virtual": false
+                    }
+                ],
+                "name": "ChannelInfo",
+                "uuid": "8813bf9b-344e-4b1b-8daf-440dca2ef2e1",
+                "views": []
+            },
+            {
+                "columns": [
+                    {
+                        "formula": "",
+                        "name": "time",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "7a7948df-ee59-4292-aea7-65748a0e14f5",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "posPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "da0a6f2e-bbdf-4ca6-919c-905111986e92",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "negPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "d832d140-96d4-49af-acd4-71ec931ec8c0",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "posTradeDirection",
+                        "order": "NONE",
+                        "type": "BOOLEAN",
+                        "uuid": "1fa03292-ea83-4690-a149-ff746337d2d5",
+                        "virtual": false
+                    }
+                ],
+                "name": "Probability",
+                "uuid": "fe259a4b-572f-4564-a992-4b0f40255024",
+                "views": []
+            },
+            {
+                "columns": [
+                    {
+                        "formula": "",
+                        "name": "posTHPrice",
+                        "order": "NONE",
+                        "type": "LONG",
+                        "uuid": "05aa762b-6c4b-4839-bd2a-55fa734e3dca",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "negTHPrice",
+                        "order": "NONE",
+                        "type": "LONG",
+                        "uuid": "daffad05-ac75-459c-b4fb-32bb2df5f638",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "posCurrentPrice",
+                        "order": "NONE",
+                        "type": "LONG",
+                        "uuid": "2fcff986-02a0-4ae6-9e3d-f85399dd8123",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "negCurrentPrice",
+                        "order": "NONE",
+                        "type": "LONG",
+                        "uuid": "3ead80b8-2c1b-4ca9-992f-0c308c57620e",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "time",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "f2c38869-4631-4461-b742-ba429823efe7",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "posTradeDirection",
+                        "order": "NONE",
+                        "type": "BOOLEAN",
+                        "uuid": "79ed25ff-3063-41a4-b758-f60127c2471a",
+                        "virtual": false
+                    }
+                ],
+                "name": "ProbabilityPercent",
+                "uuid": "1f92e2bc-e710-4953-a811-4e60c1eab897",
+                "views": []
+            },
+            {
+                "columns": [
+                    {
+                        "formula": "",
+                        "name": "openTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "8fe3097f-d987-461b-a046-1aea1ee7bba5",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "openPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "a8b710e7-5ce1-4501-98db-a651a3a0e322",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "closeTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "939d8494-a8b7-448e-856c-fc57ba2f86ef",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "closePrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "90a3bce7-39ad-4d74-8f02-77175d105d91",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "isGain",
+                        "order": "NONE",
+                        "type": "BOOLEAN",
+                        "uuid": "511c83a3-3834-42c8-9ae7-1a445daa03d0",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "isClosed",
+                        "order": "NONE",
+                        "type": "BOOLEAN",
+                        "uuid": "3f25afe5-2aeb-47f6-8099-1bff7b2e1385",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "isLong",
+                        "order": "NONE",
+                        "type": "BOOLEAN",
+                        "uuid": "efd30e1e-c4ef-46e5-b972-f01bef2f2bbf",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "orderId",
+                        "order": "NONE",
+                        "type": "INTEGER",
+                        "uuid": "546faa30-6a89-4457-8c69-eb14ef737b9d",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "eventTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "a51d8891-d4d3-47e3-b68b-3bcf52ce1f5e",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "openingCount",
+                        "order": "NONE",
+                        "type": "BYTE",
+                        "uuid": "73a7e5e5-2b46-4bb1-ad4d-48bbb68e2d2d",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "opening0",
+                        "order": "NONE",
+                        "type": "LONG",
+                        "uuid": "ba65648a-7e14-403e-a56c-039e4f256d8e",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "opening1",
+                        "order": "NONE",
+                        "type": "LONG",
+                        "uuid": "fca1f914-b3a1-456e-8902-2f22c798ef14",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "openPhysicalTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "5b236825-3174-4299-8479-c05a460c34f2",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "closePhysicalTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "72910a94-5e27-4c2e-8cf7-7b1ea7fcb825",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "eventPhysicalTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "b714bf41-36a9-4075-9faf-3170156fed1d",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "opening0_childType",
+                        "order": "NONE",
+                        "type": "INTEGER",
+                        "uuid": "ef02d751-2b00-4314-991e-37eccc865e93",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "opening1_childType",
+                        "order": "NONE",
+                        "type": "INTEGER",
+                        "uuid": "ce0df907-052c-4c0f-a174-5428b22ec9a3",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "opening0_orderId",
+                        "order": "NONE",
+                        "type": "INTEGER",
+                        "uuid": "25e82b10-3784-4eb7-b3fb-869fa4a0a3ca",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "opening1_orderId",
+                        "order": "NONE",
+                        "type": "INTEGER",
+                        "uuid": "0cbffa73-28d9-422e-8ee6-c57a89446588",
+                        "virtual": false
+                    }
+                ],
+                "name": "Trade",
+                "uuid": "c01dc06d-a6ee-43c3-8a21-45d936c6fa27",
+                "views": []
+            },
+            {
+                "columns": [
+                    {
+                        "formula": "",
+                        "name": "total",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "7ae10c70-77b4-4e6e-9eaf-ce58a4714655",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "totalPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "2645f402-eede-4d4a-a74c-0eeec6dab231",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "fakeTime",
+                        "order": "NONE",
+                        "type": "LONG",
+                        "uuid": "59924417-ca93-4a38-a8ae-274f6332497e",
+                        "virtual": false
+                    }
+                ],
+                "name": "Equity",
+                "uuid": "42d87236-c196-4133-9d71-08eef05bdc79",
+                "views": []
+            }
+        ]
+    },
+    "source": "/home/arian/Documents/Source/mfgrc/com.mfg.chart.model/src"
+}

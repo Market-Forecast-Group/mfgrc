@@ -1,0 +1,6 @@
+repo: af773aaa843e8fcd76207223ab990c4a0d86f385
+node: b88af59165318bf5fefe2121565d63a32a9287d2
+branch: mfgrc_default
+latesttag: last_indicator_with_saved_ticks
+latesttagdistance: 3259
+changessincelatesttag: 4927

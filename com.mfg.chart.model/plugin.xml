@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="id1"
+         point="com.mfg.logger.application.components">
+      <component
+            id="com.mfg.chart.model.sessionComponent"
+            name="Chart DB Session">
+      </component>
+   </extension>
+
+</plugin>

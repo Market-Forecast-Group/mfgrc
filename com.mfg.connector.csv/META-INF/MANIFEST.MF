@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Csv
+Bundle-SymbolicName: com.mfg.connector.csv;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.mfg.connector.csv.CSVPlugin
+Bundle-Vendor: MFG
+Require-Bundle: org.eclipse.core.runtime,
+ com.mfg.dm,
+ org.eclipse.ui,
+ org.eclipse.ui.views,
+ com.mfg.utils
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: lib/javacsv.jar,
+ .
+Export-Package: com.mfg.connector.csv,
+ com.mfg.connector.csv.preferences,
+ com.mfg.connector.csv.reader
+

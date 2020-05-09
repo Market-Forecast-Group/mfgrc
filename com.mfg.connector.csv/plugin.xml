@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.mfg.dm.dataprovider">
+      <dataprovider
+            class="com.mfg.connector.csv.CsvDataProvider">
+      </dataprovider>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            category="com.mfg.dm.preferences"
+            class="com.mfg.connector.csv.preferences.CSVPrefsPage"
+            id="com.mfg.connector.csv.prefs"
+            name="CSV">
+      </page>
+   </extension>
+</plugin>

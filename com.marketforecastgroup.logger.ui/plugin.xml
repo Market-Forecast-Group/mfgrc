@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.marketforescastgroup.logger.ui.views.LogView"
+            icon="icons/logviewer.png"
+            id="com.marketforescastgroup.logger.views.logview"
+            name="Log View">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.marketforescastgroup.logger.ui.preferences.LogPreferencePage"
+            id="com.marketforescastgroup.logger.preferences.logpreferencespage"
+            name="Log Preferences">
+      </page>
+   </extension>
+
+</plugin>

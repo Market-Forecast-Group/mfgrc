@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="com.mfg.persist.persistenceManager" name="Persistence Manager" schema="schema/com.mfg.persist.interfaces.utils.exsd"/>
+   <extension-point id="com.mfg.persist.workspaceStorageReference" name="Workspace Storage  Reference" schema="schema/com.mfg.persist.workspaceStorageReference.exsd"/>
+   <extension-point id="com.mfg.persist.workspaceStorageInitiator" name="Workspace Storage Initiator" schema="schema/com.mfg.persist.workspaceStorageInitiator.exsd"/>
+</plugin>

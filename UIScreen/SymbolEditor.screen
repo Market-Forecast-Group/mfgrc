@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:TabbedPane" x="33" y="59" width="872" height="518" text="Symbol" measuredWidth="872" measuredHeight="518" selection="0">
+    <items x="10" y="0" width="54" height="23" text="Symbol"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="33" y="82" width="872" height="495" text="Overview,JSON" measuredWidth="872" measuredHeight="495" selection="0" position="bottom">
+    <items x="10" y="472" width="66" height="23" text="Overview"/>
+    <items x="76" y="472" width="46" height="23" text="JSON"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HLine" x="33" y="136" width="872" measuredWidth="872" measuredHeight="6"/>
+  <widgets xsi:type="model:Label" x="39" y="103" text="Symbol" measuredWidth="76" measuredHeight="31">
+    <font size="14" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="43" y="160" width="406" height="225" text="Details" measuredWidth="406" measuredHeight="225"/>
+  <widgets xsi:type="model:Label" x="54" y="188" text="Name :" measuredWidth="39" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="120" y="188" width="156" text="E-Mini S&amp;P 500" measuredWidth="156" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="54" y="221" text="Symbol :" measuredWidth="46" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="120" y="221" width="156" text="ES" measuredWidth="156" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="52" y="285" text="Tick Size :" measuredWidth="52" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Spinner" x="120" y="285" width="76" text="25" measuredWidth="76" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="52" y="318" text="Tock Value :" measuredWidth="63" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Spinner" x="120" y="319" width="76" text="12.5" measuredWidth="76" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="870" y="92" width="26" locked="true" measuredWidth="26" measuredHeight="23" icon="help (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="54" y="256" text="Loc. Symbol :" measuredWidth="69" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="120" y="256" width="156" text="ES #F" measuredWidth="156" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="52" y="353" text="Scale :" measuredWidth="37" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Spinner" x="120" y="354" width="76" text="2" measuredWidth="76" measuredHeight="21">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MFG Help
+Bundle-SymbolicName: com.mfg.help; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.mfg.help.HelpPlugin
+Bundle-Vendor: MFG
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.help.ui,
+ org.eclipse.help.webapp,
+ org.eclipse.equinox.http.jetty,
+ org.eclipse.equinox.http.registry;bundle-version="1.1.300"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="com.mfg.logger.application.components" name="Component&apos;s Logger Preferences" schema="schema/com.mfg.logger.application.components.exsd"/>
+   <extension-point id="com.mfg.logger.ui.logViewer" name="Log Viewer" schema="schema/com.mfg.logger.ui.logViewer.exsd"/>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="com.mfg.logger.LogCategory"
+            name="Log">
+      </category>
+      <view
+            allowMultiple="true"
+            category="com.mfg.logger.LogCategory"
+            class="com.mfg.logger.application.ui.views.AppLogView"
+            icon="icons/log.jpg"
+            id="com.mfg.logger.application.ui.views.AppLogView"
+            name="Application Log"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.mfg.logger.LoggerPreferencePage"
+            id="com.mfg.logger.preferences"
+            name="Log">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+       <handler
+      class="com.mfg.logger.ui.views.CopyHandler"
+      commandId="org.eclipse.ui.edit.copy">
+   <activeWhen>
+      <with variable="activeFocusControlId">
+         <equals value="com.mfg.logger.ui.views.AbstractLogView"/>
+      </with>
+   </activeWhen>
+ </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="*">
+         <view
+               id="com.mfg.logger.application.ui.views.AppLogView"
+               minimized="false"
+               relationship="fast"
+               visible="false">
+         </view>
+      </perspectiveExtension>
+   </extension>
+
+</plugin>

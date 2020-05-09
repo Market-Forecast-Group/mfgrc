@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Dfsa
+Bundle-SymbolicName: com.marketforecastgroup.dfsa; singleton:=true
+Bundle-Version: 0.1.0
+Bundle-Activator: com.marketforecastgroup.dfsa.DFSAPlugin
+Bundle-Vendor: MFG
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui,
+ com.marketforescastgroup.logger,
+ com.mfg.persist.interfaces,
+ com.mfg.dfs,
+ org.eclipse.ui.navigator,
+ com.mfg.ui,
+ org.eclipse.ui.forms,
+ com.mfg.utils,
+ org.eclipse.core.databinding,
+ org.eclipse.core.databinding.beans,
+ org.eclipse.jface.databinding,
+ org.eclipse.core.databinding.property,
+ com.marketforecastgroup.logger.ui,
+ com.mfg.connector.dfs
+Export-Package: com.marketforecastgroup.dfsa,
+ com.marketforecastgroup.dfsa.ui

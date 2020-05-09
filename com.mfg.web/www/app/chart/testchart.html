@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <script src="linechart.js" type="application/javascript"></script>
+</head>
+
+
+<body>
+    <canvas id="canvas1" style="width:100%;height:100%">
+    </canvas>
+
+    <script src="sample.js">
+    </script>
+
+    <script>
+        window.onload = function () {
+            var chart, i, data, min, max;
+            chart = new LineChart.Chart(document.getElementById('canvas1'), 1200, 800);            
+            chart.yTick = 25;
+            chart.xTick = 1;
+            
+            data = window.sampleData;
+            
+            min = Number.MAX_VALUE;
+            max = 0;
+            
+            for (i = 0; i < data.length; i += 1) {
+                data[i].t = i;
+                min = Math.min(data[i].p, min);
+                max = Math.max(data[i].p, max);
+            }
+            
+            chart.resetRange(0, data.length, min, max);
+            
+            var ds = new LineChart.CompressedDataset(new LineChart.SimpleDataset(window.sampleData, 't', 'p'));
+            
+            var paint = new LineChart.LinePainter();
+            chart.addDataset(ds, paint);
+            chart.render();
+            
+            
+            
+            window.chart = chart;
+        };
+    </script>
+
+</body>
+
+</html>

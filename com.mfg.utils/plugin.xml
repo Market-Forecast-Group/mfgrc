@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.mfg.utils.ui.views.ChronoView"
+            icon="icons/chorno.gif"
+            id="com.mfg.utils.ui.views.ChronoView2"
+            name="Chrono"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.mfg.utils.preferences.UtilsPreferencePage"
+            id="com.mfg.utils.preferences"
+            name="Utils">
+      </page>
+      <page
+            class="com.mfg.utils.preferences.PerspectiveTrakerPreferencePage"
+            id="com.mfg.utils.perspectivetrakerprefs"
+            name="Perspective Traker">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="com.mfg.utils.ui.table.CopyFromMFGModelTableHandler"
+            commandId="org.eclipse.ui.edit.copy">
+             <activeWhen>
+      <with variable="activeFocusControlId">
+         <equals value="com.mfg.utils.ui.table.MfgModelTable"/>
+      </with>
+   </activeWhen>
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="*">
+         <view
+               id="com.mfg.utils.ui.views.ChronoView2"
+               minimized="false"
+               relationship="fast">
+         </view>
+      </perspectiveExtension>
+   </extension>
+
+</plugin>

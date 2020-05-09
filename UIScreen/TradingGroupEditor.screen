@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:TabbedPane" x="33" y="48" width="872" height="528" text="Trading Force I" measuredWidth="872" measuredHeight="528" selection="0">
+    <items x="10" y="0" width="119" height="36" text="Trading Force I"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="33" y="79" width="872" height="495" text="Overview,Manual Strategy" measuredWidth="872" measuredHeight="495" selection="0" position="bottom">
+    <items x="10" y="459" width="81" height="36" text="Overview"/>
+    <items x="91" y="459" width="128" height="36" text="Manual Strategy"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HLine" x="33" y="136" width="872" measuredWidth="872" measuredHeight="6"/>
+  <widgets xsi:type="model:Button" x="804" y="92" width="26" locked="true" measuredWidth="26" measuredHeight="30" icon="bar-chart (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="833" y="92" width="26" locked="true" measuredWidth="26" measuredHeight="30" icon="options (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VLine" x="796" y="93" height="21" locked="true" measuredWidth="6" measuredHeight="21"/>
+  <widgets xsi:type="model:Label" x="39" y="92" text="{Trading Type} Trading Group" measuredWidth="323" measuredHeight="39">
+    <font size="14" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="43" y="160" width="838" height="193" text="Trading Configuration List" measuredWidth="838" measuredHeight="193"/>
+  <widgets xsi:type="model:Group" x="43" y="376" width="395" height="89" text="Trading" measuredWidth="395" measuredHeight="89"/>
+  <widgets xsi:type="model:Link" x="87" y="400" text="Start Data Request" measuredWidth="127" measuredHeight="28">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Circle" x="58" y="398" width="25" height="25" measuredWidth="25" measuredHeight="25" icon="play (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" x="87" y="432" text="Start Trading" measuredWidth="89" measuredHeight="28">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Circle" x="58" y="430" width="25" height="25" measuredWidth="25" measuredHeight="25" icon="play (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="870" y="92" width="26" locked="true" measuredWidth="26" measuredHeight="30" icon="help (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VLine" x="862" y="93" height="21" locked="true" measuredWidth="6" measuredHeight="21"/>
+  <widgets xsi:type="model:ColorPicker" x="761" y="93" locked="true" measuredWidth="33" measuredHeight="28" background="#ffffff"/>
+  <widgets xsi:type="model:Icon" x="766" y="96" measuredWidth="16" measuredHeight="16" icon="play (small)"/>
+  <widgets xsi:type="model:Table" x="43" y="192" width="838" height="161" text=",Trading Name,Broker,Market,Status,(align:center). Actions&#xA;[x],eSignalTradingS&amp;P500,TWS,XYZ,{play},[Edit] [View]&#xA;[x],eSignalTradingDOW,TWS,XXD,{play},[Edit] [View]&#xA;[],eSignalTradingS&amp;P300,MKTSIM,GHF,{pause},[Edit] [View]&#xA;" measuredWidth="838" measuredHeight="161" alternative="#eeeeee">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

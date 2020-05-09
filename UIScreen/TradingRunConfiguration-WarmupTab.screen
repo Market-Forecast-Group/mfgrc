@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Window" x="41" y="32" width="808" height="529" text="Run Configurations" measuredWidth="808" measuredHeight="529"/>
+  <widgets xsi:type="model:Rectangle" x="51" y="112" width="206" height="401" measuredWidth="206" measuredHeight="401">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Rectangle" x="264" y="112" width="575" height="401" measuredWidth="575" measuredHeight="401">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="700" y="527" width="71" text="Run" measuredWidth="71" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="776" y="527" width="63" text="Close" measuredWidth="63" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" x="51" y="520" measuredWidth="16" measuredHeight="16" icon="help (small)"/>
+  <widgets xsi:type="model:Rectangle" x="51" y="144" width="206" height="369" measuredWidth="206" measuredHeight="369">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="56" y="152" width="193" text="Text field" measuredWidth="193" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tree" x="51" y="184" width="206" height="329" text="[-] Trading&#xA;-[-] ForexConfig&#xA;[-] DFSA&#xA;-[-] eSignalDb&#xA;" measuredWidth="206" measuredHeight="329" selection="1">
+    <items x="0" y="5" width="206" height="20" text="[-] Trading"/>
+    <items x="0" y="25" width="206" height="20" text="-[-] ForexConfig"/>
+    <items x="0" y="45" width="206" height="20" text="[-] DFSA"/>
+    <items x="0" y="65" width="206" height="20" text="-[-] eSignalDb"/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="312" y="120" width="521" text="ForexConfig" measuredWidth="521" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="272" y="120" width="41" text="Name:" measuredWidth="41" measuredHeight="21">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Rectangle" x="272" y="152" width="561" height="319" measuredWidth="561" measuredHeight="319">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="272" y="154" width="561" height="317" text="Main,WarmUp,Broker" measuredWidth="561" measuredHeight="317" selection="1">
+    <items x="10" y="0" width="42" height="23" text="Main"/>
+    <items x="52" y="0" width="61" height="23" text="WarmUp"/>
+    <items x="113" y="0" width="51" height="23" text="Broker"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="691" y="478" width="71" text="Apply" measuredWidth="71" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="767" y="478" width="63" text="Revert" measuredWidth="63" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="61" y="119" width="28" measuredWidth="28" measuredHeight="23" icon="new (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="91" y="119" width="28" measuredWidth="28" measuredHeight="23" icon="copy (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="121" y="119" width="28" measuredWidth="28" measuredHeight="23" icon="delete (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VLine" x="150" y="122" height="18" measuredWidth="6" measuredHeight="18"/>
+  <widgets xsi:type="model:Button" x="157" y="119" width="28" measuredWidth="28" measuredHeight="23" icon="squared-minus (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="187" y="119" width="28" measuredWidth="28" measuredHeight="23" icon="filter (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Combo" x="384" y="192" width="65" text="100" measuredWidth="65" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="283" y="192" width="102" text="# of prices for csv:" measuredWidth="102" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="282" y="223" width="541" height="238" text="eSignal,IB" measuredWidth="541" measuredHeight="238" selection="0">
+    <items x="10" y="0" width="54" height="23" text="eSignal"/>
+    <items x="64" y="0" width="30" height="23" text="IB"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="288" y="256" width="41" text="XP:" measuredWidth="41" measuredHeight="21">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Spinner" x="324" y="255" width="83" text="0.25" measuredWidth="83" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="420" y="256" width="41" text="DP:" measuredWidth="41" measuredHeight="21">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Spinner" x="456" y="255" width="83" text="0.25" measuredWidth="83" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="556" y="256" width="41" text="Scale:" measuredWidth="41" measuredHeight="21">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Spinner" x="592" y="255" width="83" text="0.25" measuredWidth="83" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Rectangle" x="292" y="288" width="513" height="129" measuredWidth="513" measuredHeight="129">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Table" x="292" y="320" width="513" height="97" text="# Units, Bar Type,# of bars&#xA;1,Daily,5" measuredWidth="513" measuredHeight="97" alternative="#eeeeee">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="744" y="294" width="26" measuredWidth="26" measuredHeight="23" icon="circled-plus (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="773" y="294" width="26" measuredWidth="26" measuredHeight="23" icon="delete (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VSplitter" x="255" y="115" height="398" measuredWidth="11" measuredHeight="398"/>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

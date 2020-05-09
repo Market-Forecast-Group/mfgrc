@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Rectangle" x="352" y="139" width="841" height="393" measuredWidth="841" measuredHeight="393">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Image" x="360" y="152" measuredWidth="684" measuredHeight="81" src="DBSymbolEditor_Commands.png"/>
+  <widgets xsi:type="model:Image" x="360" y="232" measuredWidth="236" measuredHeight="207" src="DBSymbolEditor_Symbol.png"/>
+  <widgets xsi:type="model:Rectangle" x="632" y="240" width="249" height="145" measuredWidth="249" measuredHeight="145">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="640" y="248" text="Start Date" measuredWidth="55" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="640" y="282" text="Daily" measuredWidth="28" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="640" y="310" text="1 Minute" measuredWidth="46" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="640" y="337" text="1 Tick Range" measuredWidth="66" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="712" y="282" width="161" measuredWidth="161" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="712" y="310" width="161" measuredWidth="161" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="712" y="337" width="161" measuredWidth="161" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HLine" x="640" y="268" width="233" measuredWidth="233" measuredHeight="6"/>
+  <widgets xsi:type="model:Rectangle" x="904" y="240" width="249" height="145" measuredWidth="249" measuredHeight="145">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="912" y="248" text="End Date" measuredWidth="49" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="912" y="282" text="Daily" measuredWidth="28" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="912" y="310" text="1 Minute" measuredWidth="46" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="912" y="337" text="1 Tick Range" measuredWidth="66" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="984" y="282" width="161" measuredWidth="161" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="984" y="310" width="161" measuredWidth="161" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="984" y="337" width="161" measuredWidth="161" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HLine" x="912" y="268" width="233" measuredWidth="233" measuredHeight="6"/>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

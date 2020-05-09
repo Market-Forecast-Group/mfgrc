@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:TabbedPane" x="24" y="64" width="833" height="489" text="Strategy Builder" measuredWidth="833" measuredHeight="489" selection="0">
+    <items x="10" y="0" width="97" height="23" text="Strategy Builder"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Accordion" x="24" y="117" width="249" height="433" text="Events&#xA;Commands&#xA;Binding Conditions&#xA;AVG Rules" measuredWidth="249" measuredHeight="433" selection="1">
+    <items x="0" y="2" width="249" height="24" text="Events"/>
+    <items x="0" y="26" width="249" height="24" text="Commands"/>
+    <items x="0" y="385" width="249" height="24" text="Binding Conditions"/>
+    <items x="0" y="409" width="249" height="24" text="AVG Rules"/>
+  </widgets>
+  <widgets xsi:type="model:Rectangle" x="24" y="87" width="249" height="34" measuredWidth="249" measuredHeight="34">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Rectangle" x="34" y="93" width="55" height="21" measuredWidth="55" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="36" y="93" width="45" text="Select" measuredWidth="45" measuredHeight="21" textAlignment="Center" icon="arrow-cursor (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="66" y="184" text="Entry" measuredWidth="31" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" x="38" y="184" measuredWidth="16" measuredHeight="16" icon="redo (small)"/>
+  <widgets xsi:type="model:Label" x="66" y="213" text="Exit" measuredWidth="23" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" x="38" y="213" measuredWidth="16" measuredHeight="16" icon="undo (small)"/>
+  <widgets xsi:type="model:Label" x="66" y="245" text="Close All" measuredWidth="45" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" x="31" y="240" measuredWidth="32" measuredHeight="32" icon="unselected (large)"/>
+  <widgets xsi:type="model:Icon" x="38" y="248" measuredWidth="16" measuredHeight="16" icon="stop-media (small)"/>
+  <widgets xsi:type="model:Icon" x="31" y="206" measuredWidth="32" measuredHeight="32" icon="unselected (large)"/>
+  <widgets xsi:type="model:Icon" x="30" y="176" measuredWidth="32" measuredHeight="32" icon="unselected (large)"/>
+  <widgets xsi:type="model:Label" x="66" y="280" text="Stop &amp; Rev" measuredWidth="59" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" x="31" y="275" measuredWidth="32" measuredHeight="32" icon="unselected (large)"/>
+  <widgets xsi:type="model:Icon" x="38" y="283" measuredWidth="16" measuredHeight="16" icon="stop-media (small)"/>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

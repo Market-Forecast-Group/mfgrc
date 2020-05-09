@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:TabbedPane" x="240" y="128" width="449" height="185" text="Broker Settings, Strategy Settings" measuredWidth="449" measuredHeight="185" selection="1">
+    <items x="10" y="0" width="93" height="23" text="Broker Settings"/>
+    <items x="103" y="0" width="104" height="23" text="Strategy Settings"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="240" y="151" width="449" height="162" text="Manual Strategy, Future Strategy, Other Future Strategy" measuredWidth="449" measuredHeight="162" selection="0">
+    <items x="10" y="0" width="99" height="23" text="Manual Strategy"/>
+    <items x="109" y="0" width="97" height="23" text="Future Strategy"/>
+    <items x="206" y="0" width="128" height="23" text="Other Future Strategy"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HLine" x="256" y="200" width="417" measuredWidth="417" measuredHeight="6"/>
+  <widgets xsi:type="model:HLine" x="256" y="232" width="417" measuredWidth="417" measuredHeight="6"/>
+  <widgets xsi:type="model:HLine" x="256" y="264" width="417" measuredWidth="417" measuredHeight="6"/>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

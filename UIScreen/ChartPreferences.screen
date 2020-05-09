@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" theme="sketch">
+  <widgets xsi:type="model:Rectangle" x="56" y="16" width="489" height="417" measuredWidth="489" measuredHeight="417">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="64" y="66" text="Active Profile:" measuredWidth="78" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Combo" x="64" y="88" width="401" text="MFG Chart Profile (Built-in)" measuredWidth="401" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="472" y="87" text="Remove" measuredWidth="63" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="64" y="120" text="New..." measuredWidth="53" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="122" y="120" text="Import..." measuredWidth="65" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="194" y="120" text="Export all..." measuredWidth="77" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="64" y="156" text="Details:" measuredWidth="43" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="64" y="182" width="471" height="243" text="Scales, Compression" measuredWidth="471" measuredHeight="243" selection="0">
+    <items x="10" y="0" width="52" height="27" text="Scales"/>
+    <items x="62" y="0" width="90" height="27" text="Compression"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Panel" x="74" y="219" width="451" height="196" measuredWidth="451" measuredHeight="196"/>
+  <widgets xsi:type="model:Label" x="84" y="230" text="Level: 3" measuredWidth="44" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HLine" x="84" y="255" width="431" measuredWidth="431" measuredHeight="6"/>
+  <widgets xsi:type="model:ColorPicker" x="127" y="230" measuredWidth="33" measuredHeight="23"/>
+  <widgets xsi:type="model:Table" x="88" y="260" width="427" height="141" text="Layer, Enabled, Visible, Filter&#xD;&#xA;Pivots, [x],[x],[x]&#xD;&#xA;Channels, [],[],[x]&#xD;&#xA;ZZ, [x],[x],[x]&#xD;&#xA;Bands, [x],[x],[x]&#xD;&#xA;Probs,[x], [x],[x]" measuredWidth="427" measuredHeight="141" alternative="#eeeeee">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HLine" x="64" y="56" width="471" measuredWidth="471" measuredHeight="6"/>
+  <widgets xsi:type="model:Label" x="64" y="16" text="Chart" measuredWidth="58" measuredHeight="38">
+    <font size="16" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="479" y="229" text="{arrow-right}" measuredWidth="36" measuredHeight="26">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="437" y="229" text="{arrow-left}" measuredWidth="36" measuredHeight="26">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="176" y="229" text="1" measuredWidth="26" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="208" y="229" text="2" measuredWidth="26" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="240" y="229" text="3" measuredWidth="26" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="270" y="229" text="4" measuredWidth="26" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="304" y="229" text="5" measuredWidth="26" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="336" y="229" text="6" measuredWidth="26" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="576" y="182" width="377" height="233" text="Scales, Compression" measuredWidth="377" measuredHeight="233" selection="1">
+    <items x="10" y="0" width="52" height="27" text="Scales"/>
+    <items x="62" y="0" width="90" height="27" text="Compression"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Checkbox" x="592" y="236" text="Compress Prices with ZZ" measuredWidth="151" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Checkbox" x="593" y="268" text="Compress Bands with SC &amp; RC" measuredWidth="183" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="616" y="292" text="Use scale:" measuredWidth="56" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Combo" x="671" y="292" width="50" text="3" measuredWidth="50" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="593" y="328" text="Default compression of layers:" measuredWidth="164" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="756" y="328" width="72" text="300" measuredWidth="72" measuredHeight="23">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

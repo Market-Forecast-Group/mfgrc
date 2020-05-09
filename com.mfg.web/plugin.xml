@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="false"
+            category="com.mfg.web.category"
+            class="com.mfg.web.ui.WebServerView"
+            id="com.mfg.web.ui.webserver"
+            name="Web Server">
+      </view>
+      <category
+            id="com.mfg.web.category"
+            name="Web Server">
+      </category>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="com.mfg.web.ui.WebServerPerspective"
+            id="com.mfg.web.perspective"
+            name="Web Server">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="com.mfg.web.perspective">
+         <view
+               id="com.mfg.web.ui.webserver"
+               minimized="false"
+               ratio="0.5"
+               relationship="left"
+               relative="org.eclipse.ui.editorss"
+               visible="true">
+         </view>
+      </perspectiveExtension>
+   </extension>
+</plugin>

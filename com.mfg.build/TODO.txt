@@ -1,0 +1,9 @@
+- Keep the exported product in mfg.build/products and put a timestamp. This can help Giulio to use an older version if a newer version has a regression.
+- A context menu to open selection as a file in a text editor. Useful to open log-error files.
+- Build external dependencies.
+- Incremental build of MFG.
+- Go to the SystemTry and notify when there is a new MFG source.
+
+Done
+-------------------
+- Maybe download the repo.zip and not clone the whole repo.

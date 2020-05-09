@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+       <page
+            category="com.mfg.dm.preferences"
+            class="com.marketforecastgroup.dfsa.ui.preferences.EmbeddedDFSDataProviderPrefPage"
+            id="com.mfg.dfs.embeddedDfs"
+            name="DFS">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+         <command
+            defaultHandler="com.marketforecastgroup.dfsa.app.ui.commands.SaveWorkspaceHandler"
+            id="com.marketforecastgroup.dfsa.app.ui.save"
+            name="Save">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+         <menuContribution
+          allPopups="false"
+          locationURI="toolbar:org.eclipse.ui.main.toolbar">
+       <toolbar
+             id="com.marketforecastgroup.dfsa.app.toolbar">
+          <command
+                commandId="com.marketforecastgroup.dfsa.app.ui.save"
+                icon="icons/save_edit.gif"
+                style="push">
+          </command>
+       </toolbar>
+    </menuContribution>
+   </extension>
+</plugin>

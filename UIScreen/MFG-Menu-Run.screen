@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Menu" x="16" y="16" width="402" text="&amp;File,&amp;Edit,&amp;Run,&amp;Window,&amp;Help" measuredWidth="402" measuredHeight="23" selection="0">
+    <items x="5" y="0" width="26" height="23" text="&amp;File"/>
+    <items x="31" y="0" width="28" height="23" text="&amp;Edit"/>
+    <items x="59" y="0" width="29" height="23" text="&amp;Run"/>
+    <items x="88" y="0" width="48" height="23" text="&amp;Window"/>
+    <items x="136" y="0" width="31" height="23" text="&amp;Help"/>
+  </widgets>
+  <widgets xsi:type="model:Popup" x="16" y="38" width="145" text="New, >&#xA;Open File...&#xA;---&#xA;Close&#xA;Close All&#xA;---&#xA;Save&#xA;Save All&#xA;---&#xA;Rename&#xA;Refresh&#xA;---&#xA;Import...&#xA;Export...&#xA;---&#xA;Exit" measuredWidth="145" measuredHeight="301" selection="0">
+    <items x="0" y="2" width="145" height="22" text="New, >"/>
+    <items x="0" y="24" width="145" height="22" text="Open File..."/>
+    <items x="0" y="46" width="145" height="11" text="---"/>
+    <items x="0" y="57" width="145" height="22" text="Close"/>
+    <items x="0" y="79" width="145" height="22" text="Close All"/>
+    <items x="0" y="101" width="145" height="11" text="---"/>
+    <items x="0" y="112" width="145" height="22" text="Save"/>
+    <items x="0" y="134" width="145" height="22" text="Save All"/>
+    <items x="0" y="156" width="145" height="11" text="---"/>
+    <items x="0" y="167" width="145" height="22" text="Rename"/>
+    <items x="0" y="189" width="145" height="22" text="Refresh"/>
+    <items x="0" y="211" width="145" height="11" text="---"/>
+    <items x="0" y="222" width="145" height="22" text="Import..."/>
+    <items x="0" y="244" width="145" height="22" text="Export..."/>
+    <items x="0" y="266" width="145" height="11" text="---"/>
+    <items x="0" y="277" width="145" height="22" text="Exit"/>
+  </widgets>
+  <widgets xsi:type="model:Popup" x="160" y="38" width="127" text="Symbol&#xA;Strategy" measuredWidth="127" measuredHeight="48" selection="1">
+    <items x="0" y="2" width="127" height="22" text="Symbol"/>
+    <items x="0" y="24" width="127" height="22" text="Strategy"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

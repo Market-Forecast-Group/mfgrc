@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Window" x="88" y="72" width="534" height="419" text="New Database" measuredWidth="534" measuredHeight="419"/>
+  <widgets xsi:type="model:Rectangle" x="88" y="152" width="534" height="297" measuredWidth="534" measuredHeight="297">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="102" y="101" text="Database" measuredWidth="82" measuredHeight="27">
+    <font size="12" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="132" y="125" text="Create New Database" measuredWidth="111" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" x="560" y="98" measuredWidth="48" measuredHeight="48" icon="database (xlarge)"/>
+  <widgets xsi:type="model:Label" x="102" y="173" text="Name:" measuredWidth="36" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="144" y="173" width="249" text="Text field" measuredWidth="249" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Checkbox" x="101" y="212" text="Use default location" measuredWidth="116" measuredHeight="21" selected="true">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="102" y="248" text="Location:" measuredWidth="49" measuredHeight="21" foreground="#999999">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="150" y="248" width="363" text="Text field" measuredWidth="363" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="520" y="248" width="73" height="21" text="Browse..." measuredWidth="73" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="472" y="458" width="71" text="Finish" measuredWidth="71" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="548" y="458" width="63" text="Cancel" measuredWidth="63" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" x="95" y="453" measuredWidth="16" measuredHeight="16" icon="help (small)"/>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

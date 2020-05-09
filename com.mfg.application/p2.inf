@@ -1,0 +1,2 @@
+instructions.configure=\
+   addRepository(name:MFG update,type:0,location:file${#58}/D:/Karell/Market/Project/MFG_Deployment/repository);

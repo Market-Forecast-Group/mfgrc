@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Rectangle" x="136" y="8" width="441" height="657" measuredWidth="441" measuredHeight="657">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="136" y="16" width="441" height="649" text="MFG Explorer" measuredWidth="441" measuredHeight="649" selection="0">
+    <items x="10" y="0" width="109" height="36" text="MFG Explorer"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="493" y="12" width="25" measuredWidth="25" measuredHeight="30" icon="database (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="519" y="12" width="25" measuredWidth="25" measuredHeight="30" icon="curved-arrow-down (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="545" y="12" width="25" measuredWidth="25" measuredHeight="30" icon="curved-arrow-up (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tree" x="136" y="39" width="441" height="626" text="Strategies&#xA;-SimpleEntryExit.mfgflow&#xA;Trade Configurations&#xA;-default&#xA;--eSignal&#xA;--IB&#xA;-Trading Force I&#xA;--eSignalTradingS&amp;P&#xA;--eSignalTradingDOW&#xA;Symbols&#xA;-eSignalSymbol&#xA;-IBSymbol" measuredWidth="441" measuredHeight="626">
+    <items x="0" y="5" width="441" height="28" text="Strategies"/>
+    <items x="0" y="33" width="441" height="28" text="-SimpleEntryExit.mfgflow"/>
+    <items x="0" y="61" width="441" height="28" text="Trade Configurations"/>
+    <items x="0" y="89" width="441" height="28" text="-default"/>
+    <items x="0" y="117" width="441" height="28" text="--eSignal"/>
+    <items x="0" y="145" width="441" height="28" text="--IB"/>
+    <items x="0" y="173" width="441" height="28" text="-Trading Force I"/>
+    <items x="0" y="201" width="441" height="28" text="--eSignalTradingS&amp;P"/>
+    <items x="0" y="229" width="441" height="28" text="--eSignalTradingDOW"/>
+    <items x="0" y="257" width="441" height="28" text="Symbols"/>
+    <items x="0" y="285" width="441" height="28" text="-eSignalSymbol"/>
+    <items x="0" y="313" width="441" height="28" text="-IBSymbol"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

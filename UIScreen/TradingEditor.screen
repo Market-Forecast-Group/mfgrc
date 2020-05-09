@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:TabbedPane" x="33" y="59" width="872" height="518" text="Trading" measuredWidth="872" measuredHeight="518" selection="0">
+    <items x="10" y="0" width="71" height="36" text="Trading"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="33" y="82" width="872" height="495" text="Overview,Data Provider,WarmUp,Broker" measuredWidth="872" measuredHeight="495" selection="0" position="bottom">
+    <items x="10" y="459" width="81" height="36" text="Overview"/>
+    <items x="91" y="459" width="111" height="36" text="Data Provider"/>
+    <items x="202" y="459" width="79" height="36" text="WarmUp"/>
+    <items x="281" y="459" width="63" height="36" text="Broker"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HLine" x="33" y="136" width="872" measuredWidth="872" measuredHeight="6"/>
+  <widgets xsi:type="model:Button" x="804" y="92" width="26" locked="true" measuredWidth="26" measuredHeight="30" icon="bar-chart (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="833" y="92" width="26" locked="true" measuredWidth="26" measuredHeight="30" icon="options (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VLine" x="796" y="93" height="21" locked="true" measuredWidth="6" measuredHeight="21"/>
+  <widgets xsi:type="model:Label" x="39" y="103" text="{Trading Type} {Broker} Trading" measuredWidth="344" measuredHeight="39">
+    <font size="14" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="43" y="160" width="406" height="193" text="Contract" measuredWidth="406" measuredHeight="193"/>
+  <widgets xsi:type="model:Group" x="500" y="160" width="395" height="193" text="Pattern" measuredWidth="395" measuredHeight="193"/>
+  <widgets xsi:type="model:Group" x="500" y="376" width="395" height="89" text="Trading" measuredWidth="395" measuredHeight="89"/>
+  <widgets xsi:type="model:Link" x="544" y="400" text="Start Data Request" measuredWidth="127" measuredHeight="28">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Circle" x="515" y="398" width="25" height="25" measuredWidth="25" measuredHeight="25" icon="play (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" x="544" y="432" text="Start Trading" measuredWidth="89" measuredHeight="28">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Circle" x="515" y="430" width="25" height="25" measuredWidth="25" measuredHeight="25" icon="play (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="639" y="241" text="{Pattern Text} " measuredWidth="159" measuredHeight="39">
+    <font size="14" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="54" y="188" text="Name :" measuredWidth="52" measuredHeight="28">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="101" y="188" width="156" text="Text field" measuredWidth="156" measuredHeight="28">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="54" y="221" text="Symbol :" measuredWidth="62" measuredHeight="28">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="101" y="221" width="156" text="Text field" measuredWidth="156" measuredHeight="28">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="52" y="254" text="Tick Size :" measuredWidth="69" measuredHeight="28">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Spinner" x="101" y="255" width="76" text="25" measuredWidth="76" measuredHeight="28">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="52" y="287" text="Scale :" measuredWidth="47" measuredHeight="28">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Spinner" x="101" y="288" width="76" text="2" measuredWidth="76" measuredHeight="28">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="870" y="92" width="26" locked="true" measuredWidth="26" measuredHeight="30" icon="help (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VLine" x="862" y="93" height="21" locked="true" measuredWidth="6" measuredHeight="21"/>
+  <widgets xsi:type="model:ColorPicker" x="761" y="93" locked="true" measuredWidth="33" measuredHeight="28" background="#ffffff"/>
+  <widgets xsi:type="model:Icon" x="766" y="96" measuredWidth="16" measuredHeight="16" icon="play (small)"/>
+  <widgets xsi:type="model:Group" x="43" y="376" width="406" height="145" text="Trading Group List" measuredWidth="406" measuredHeight="145"/>
+  <widgets xsi:type="model:Table" x="52" y="400" width="269" height="111" text="default&#xD;&#xA;Trade Force I&#xD;&#xA;Trade Force II" measuredWidth="269" measuredHeight="111" selection="0" background="#cccccc" alternative="#f3f3f3">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="336" y="422" width="97" text="Add" measuredWidth="97" measuredHeight="30">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="336" y="454" width="97" text="Remove" measuredWidth="97" measuredHeight="30">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

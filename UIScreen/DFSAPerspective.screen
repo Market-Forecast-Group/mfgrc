@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Rectangle" x="16" y="16" width="1073" height="673" measuredWidth="1073" measuredHeight="673">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Rectangle" x="16" y="16" width="282" height="673" measuredWidth="282" measuredHeight="673">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="297" y="19" width="792" height="456" text="DFSA" measuredWidth="792" measuredHeight="456" selection="0">
+    <items x="10" y="0" width="46" height="23" text="DFSA"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="297" y="40" width="792" height="435" text="Overview,Data Provider,Scheduler" measuredWidth="792" measuredHeight="435" selection="0" position="bottom">
+    <items x="10" y="412" width="66" height="23" text="Overview"/>
+    <items x="76" y="412" width="86" height="23" text="Data Provider"/>
+    <items x="162" y="412" width="67" height="23" text="Scheduler"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HLine" x="297" y="87" width="792" measuredWidth="792" measuredHeight="6"/>
+  <widgets xsi:type="model:Button" x="993" y="45" width="26" measuredWidth="26" measuredHeight="23" icon="bar-chart (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="1022" y="45" width="26" measuredWidth="26" measuredHeight="23" icon="options (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VLine" x="985" y="46" height="21" measuredWidth="6" measuredHeight="21"/>
+  <widgets xsi:type="model:Label" x="302" y="56" width="187" text="Saving Data to DB" measuredWidth="187" measuredHeight="31">
+    <font size="14" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="306" y="108" width="368" height="170" text="Contract" measuredWidth="368" measuredHeight="170"/>
+  <widgets xsi:type="model:Group" x="721" y="108" width="358" height="84" text="Database" measuredWidth="358" measuredHeight="84"/>
+  <widgets xsi:type="model:Group" x="721" y="299" width="358" height="78" text="Saving" measuredWidth="358" measuredHeight="78"/>
+  <widgets xsi:type="model:Link" x="757" y="318" text="Start DB Saving" measuredWidth="78" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Circle" x="734" y="318" width="23" height="22" measuredWidth="23" measuredHeight="22" icon="play (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" x="303" y="301" text="Update Data Provider Settings..." measuredWidth="161" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="316" y="132" width="35" text="Name :" measuredWidth="35" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="358" y="132" width="142" text="Text field" measuredWidth="142" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="316" y="161" width="41" text="Symbol :" measuredWidth="41" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="358" y="161" width="142" text="Text field" measuredWidth="142" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="314" y="190" width="47" text="Tick Size :" measuredWidth="47" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Spinner" x="358" y="191" width="69" text="25" measuredWidth="69" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="314" y="219" width="33" text="Scale :" measuredWidth="33" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Spinner" x="358" y="220" width="69" text="2" measuredWidth="69" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="1059" y="45" width="26" measuredWidth="26" measuredHeight="23" icon="help (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VLine" x="1051" y="46" height="21" measuredWidth="6" measuredHeight="21"/>
+  <widgets xsi:type="model:ColorPicker" x="950" y="46" measuredWidth="33" measuredHeight="21" background="#ffffff"/>
+  <widgets xsi:type="model:Icon" x="956" y="48" measuredWidth="16" measuredHeight="16" icon="play (small)"/>
+  <widgets xsi:type="model:Link" x="305" y="319" text="Update DB Settings..." measuredWidth="108" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="732" y="132" width="36" text="Name :" measuredWidth="36" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="775" y="132" width="142" text="Text field" measuredWidth="142" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="721" y="200" width="358" height="78" text="Scheduler" measuredWidth="358" measuredHeight="78"/>
+  <widgets xsi:type="model:Label" x="767" y="229" width="166" text="Next scheduled save will be at {time}" measuredWidth="166" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" x="746" y="232" measuredWidth="16" measuredHeight="16" icon="history (small)"/>
+  <widgets xsi:type="model:TabbedPane" x="16" y="19" width="265" height="649" text="DFSA Explorer" measuredWidth="265" measuredHeight="649" selection="0">
+    <items x="10" y="0" width="89" height="23" text="DFSA Explorer"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tree" x="16" y="40" width="282" height="649" text="Database Connections&#xA;-eSignal-DB&#xA;-IB-DB" measuredWidth="282" measuredHeight="649">
+    <items x="0" y="5" width="282" height="20" text="Database Connections"/>
+    <items x="0" y="25" width="282" height="20" text="-eSignal-DB"/>
+    <items x="0" y="45" width="282" height="20" text="-IB-DB"/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="297" y="477" width="792" height="212" text="MFG Log, MFG Console" measuredWidth="792" measuredHeight="212" selection="0">
+    <items x="10" y="0" width="61" height="23" text="MFG Log"/>
+    <items x="71" y="0" width="82" height="23" text="MFG Console"/>
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

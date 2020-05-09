@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="true"
+            class="com.mfg.strategy.manual.ui.views.TradingConsoleView2"
+            icon="icons/trading-console.ico"
+            id="com.mfg.strategy.manual.views.tradingConsole"
+            name="Trading Console"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="com.mfg.symbols.strategies">
+         <strategyFactory
+            class="com.mfg.strategy.manual.ManualStrategyFactory"
+            id="com.mfg.strategy.manual.strategyFactory"
+            name="Manual">
+      </strategyFactory>
+   </extension>
+   <extension
+         point="com.mfg.symbols.tradingViews">
+      <tradingView
+            viewId="com.mfg.strategy.manual.views.tradingConsole">
+      </tradingView>
+   </extension>
+
+<extension
+      point="com.mfg.chart.tools">
+   <tool
+         class="com.mfg.strategy.manual.ui.chart.tools.TradingChartToolFactory">
+   </tool>
+</extension>
+<extension
+      point="org.eclipse.ui.perspectiveExtensions">
+   <perspectiveExtension
+         targetID="com.mfg.application.perspective">
+      <view
+            id="com.mfg.strategy.manual.views.tradingConsole"
+            minimized="false"
+            ratio="0.5"
+            relationship="right"
+            relative="org.eclipse.ui.editorss"
+            visible="false">
+      </view>
+   </perspectiveExtension>
+</extension>
+<extension
+      point="org.eclipse.ui.commands">
+   <command
+         defaultHandler="com.mfg.strategy.manual.ui.commands.OpenTradingConsoleHandler"
+         id="com.mfg.strategy.manual.commands.opentradingconsole"
+         name="Open Trading Console">
+   </command>
+</extension>
+<extension
+      point="org.eclipse.ui.menus">
+   <menuContribution
+         allPopups="false"
+         locationURI="popup:org.eclipse.ui.popup.any?after=com.mfg.symbols.opensep">
+      <command
+            commandId="com.mfg.strategy.manual.commands.opentradingconsole"
+            icon="icons/trading-console.ico"
+            style="push">
+         <visibleWhen
+               checkEnabled="false">
+            <with
+                  variable="selection">
+               <iterate
+                     ifEmpty="false">
+                  <instanceof
+                        value="com.mfg.symbols.trading.configurations.TradingConfiguration">
+                  </instanceof>
+               </iterate>
+            </with>
+         </visibleWhen>
+      </command>
+   </menuContribution>
+   <menuContribution
+         allPopups="false"
+         locationURI="toolbar:com.mfg.symbols.trading.ui.views.GlobalCommandView?after=additions">
+      <command
+            commandId="com.mfg.strategy.manual.commands.opentradingconsole"
+            icon="icons/trading-console.ico"
+            style="push">
+         <visibleWhen
+               checkEnabled="false">
+            <with
+                  variable="selection">
+               <iterate
+                     ifEmpty="false">
+                  <instanceof
+                        value="com.mfg.symbols.trading.configurations.TradingConfiguration">
+                  </instanceof>
+               </iterate>
+            </with>
+         </visibleWhen>
+      </command>
+   </menuContribution>
+</extension>
+
+</plugin>

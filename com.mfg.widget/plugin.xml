@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      
+      <view
+            category="com.mfg.widget.probabilities"
+            class="com.mfg.widget.ui.ProbabilitiesSettingsView"
+            icon="icons/dice.ico"
+            id="com.mfg.widget.ui.ProbabilitiesSettingsView"
+            name="Probabilities Settings">
+      </view>
+      <view
+            category="com.mfg.widget.probabilities"
+            class="com.mfg.widget.ui.IndicatorSettingsView"
+            icon="icons/indicator.ico"
+            id="com.mfg.widget.ui.IndicatorSettingsView"
+            name="Indicator Settings">
+      </view>
+      <view
+            category="com.mfg.widget.probabilities"
+            class="com.mfg.widget.probabilities.logger.ProbabilitiesWoodenLogView"
+            icon="icons/probLog.ico"
+            id="com.mfg.widget.probabilities.logger.ProbabilitiesWoodenLogView"
+            name="Probabilities Log">
+      </view>
+      <category
+            id="com.mfg.widget.probabilities"
+            name="Probabilities">
+      </category>
+   </extension>
+   <extension
+         point="com.mfg.persist.workspaceStorageReference">
+      <workspaceStorageReference
+            class="com.mfg.widget.probabilities.PLStatsProbabilitiesStorageReference">
+      </workspaceStorageReference>
+   </extension>
+   <extension
+         point="org.eclipse.ui.importWizards">
+      <category
+            id="com.mfg.widget.probabilities"
+            name="Probabilities">
+      </category>
+      <wizard
+            category="com.mfg.widget.probabilities"
+            class="com.mfg.widget.probabilities.ImportDistributionWizard"
+            icon="icons/probabilities statistics.ico"
+            id="com.mfg.widget.probabilities.ImportDistributionWizard"
+            name="Probability Distribution">
+      </wizard>
+   </extension>
+
+</plugin>

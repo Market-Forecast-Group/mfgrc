@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Rectangle" x="72" y="48" width="729" height="241" measuredWidth="729" measuredHeight="241">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="72" y="56" width="729" height="233" text="Search" measuredWidth="729" measuredHeight="233" selection="0">
+    <items x="10" y="0" width="53" height="23" text="Search"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Table" x="72" y="79" width="729" height="210" text="Symbol,Expiration,Loc. Synbol,Type,Currency,Exchange" measuredWidth="729" measuredHeight="210" alternative="#eeeeee">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="714" y="53" width="25" measuredWidth="25" measuredHeight="23" icon="delete (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="742" y="53" width="25" measuredWidth="25" measuredHeight="23" icon="print-preview (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="770" y="53" width="25" measuredWidth="25" measuredHeight="23" icon="refresh (small)">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

@@ -1,0 +1,326 @@
+{
+    "bufferSize": 100,
+    "packageName": "com.mfg.inputdb.indicator.mdb",
+    "schema": {
+        "name": "BaseChart",
+        "tables": [
+            {
+                "columns": [
+                    {
+                        "formula": "",
+                        "name": "time",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "5488d6af-775b-458c-b71d-4afcbe603da3",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "topPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "94afa187-cf12-41e9-ba6e-1fc683c84d74",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "centerPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "4a07d26d-3e14-45e3-a421-8e3ddd493205",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "bottomPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "9f1623dd-4317-4182-87ff-53ecd990f334",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "physicalTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "e366347d-3bb9-4447-8ce9-68651f4ab78e",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "topRaw",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "ccdcd77d-7ea9-4c08-a898-16a4687fc1be",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "centerRaw",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "55a56721-5116-4da2-a134-8c5e5c75d6ff",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "bottomRaw",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "96c7d594-1285-4450-b3cc-a8eb62fbc42a",
+                        "virtual": false
+                    }
+                ],
+                "name": "Bands",
+                "uuid": "1324de2f-d059-4caa-b5b3-09636736be01",
+                "views": []
+            },
+            {
+                "columns": [
+                    {
+                        "formula": "",
+                        "name": "pivotPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "79b74b3a-20f1-48d5-a0fd-4d7edbfcb9a2",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "pivotTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "e17c10dc-52b2-4952-a906-92b239fe43d2",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "confirmPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "e933e331-4a1d-45c5-80a3-a39b8f07aaa0",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "confirmTime",
+                        "order": "NONE",
+                        "type": "LONG",
+                        "uuid": "fb5c4409-1dac-4f13-a42a-1b3b6524b08a",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "timeInterval",
+                        "order": "NONE",
+                        "type": "LONG",
+                        "uuid": "b7e01af1-21bc-4e43-808d-fb3fa487d678",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "isUp",
+                        "order": "NONE",
+                        "type": "BOOLEAN",
+                        "uuid": "9c27d821-6300-4769-8f4d-3659c76ba446",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "pivotPhysicalTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "6ddfa1e8-dbd4-4ed4-b28d-b378d755cc18",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "confirmPhysicalTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "47733df6-20f1-4c90-bcd3-72bfa0e0f6a0",
+                        "virtual": false
+                    }
+                ],
+                "name": "Pivot",
+                "uuid": "fc117a2b-39f1-4fb1-b3ac-356cbf52e9e4",
+                "views": []
+            },
+            {
+                "columns": [
+                    {
+                        "formula": "",
+                        "name": "startTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "2049491e-83fa-43f9-846a-d783e58fe865",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "endTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "372c317b-c2c2-4126-814c-46ca6edb7ec5",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "topStartPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "7de840a6-c975-4a66-a75b-b42d9dc51829",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "topEndPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "d47a3ed0-beb3-4487-b8da-9ba7930ea24f",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "centerStartPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "7f1f32aa-a3d0-4263-a8ea-e48cc272afdd",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "centerEndPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "20a81701-5b6d-4441-b9af-022f385a4ce9",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "bottomStartPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "59158fc8-e15e-4201-9a22-50dee19fd877",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "bottomEndPrice",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "41ed0b90-9527-421e-9f6d-011a57349fd0",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "slope",
+                        "order": "NONE",
+                        "type": "BOOLEAN",
+                        "uuid": "23f5ee57-2ac7-48e3-a11f-5ef21555aa54",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "startPhysicalTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "bec417c2-2730-4bfa-8aaf-68196587e4a3",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "endPhysicalTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "5634f269-54c0-4ee4-943b-71447056f2b5",
+                        "virtual": false
+                    }
+                ],
+                "name": "Channel",
+                "uuid": "4295d3b5-f743-4d0e-9c00-7101036ba349",
+                "views": []
+            },
+            {
+                "columns": [
+                    {
+                        "formula": "",
+                        "name": "startTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "daba14bc-91b4-4a74-9892-32b05bc7eb4b",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "endTime",
+                        "order": "ASCENDING",
+                        "type": "LONG",
+                        "uuid": "f34523d8-c3a4-4351-b54f-23ac930a518e",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "c0",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "e736b7cf-09f3-4af5-918a-da9f3d1a4141",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "c1",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "2e444897-d30b-42e5-80e1-62ba461d0793",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "c2",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "4264ef67-104d-4fd3-9880-cd3c89e5b063",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "c3",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "9941f015-d54b-4e22-8d90-177e6bfe35f0",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "c4",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "c6c227fc-c4fb-4535-9d1d-df9511985bd5",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "topDistance",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "1274b0ae-e596-4103-8d1c-1da9ceb16aec",
+                        "virtual": false
+                    },
+                    {
+                        "formula": "",
+                        "name": "bottomDistance",
+                        "order": "NONE",
+                        "type": "DOUBLE",
+                        "uuid": "4130e36c-b48f-4aa2-bc33-280658a0c2bd",
+                        "virtual": false
+                    }
+                ],
+                "name": "Channel2",
+                "uuid": "d290623f-05b0-4186-8805-b5c37f7850a7",
+                "views": []
+            }
+        ]
+    },
+    "source": "C:/Users/arian/Documents/Source/mfgrc/com.mfg.inputdb.indicator/src"
+}

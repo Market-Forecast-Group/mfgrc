@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:TabbedPane" x="32" y="40" width="386" height="257" text="Realtime Indicator 1" measuredWidth="386" measuredHeight="257" selection="0">
+    <items x="10" y="0" width="116" height="23" text="Realtime Indicator 1"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="32" y="63" width="386" height="234" text="Overview,Fiancial Data,Indicator Settings" measuredWidth="386" measuredHeight="234" selection="0" position="bottom">
+    <items x="10" y="211" width="66" height="23" text="Overview"/>
+    <items x="76" y="211" width="81" height="23" text="Fiancial Data"/>
+    <items x="157" y="211" width="105" height="23" text="Indicator Settings"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="52" y="77" width="117" height="73" text="Financial Data" measuredWidth="117" measuredHeight="73"/>
+  <widgets xsi:type="model:Group" x="52" y="165" width="117" height="73" text="Historical Data Series" measuredWidth="117" measuredHeight="73"/>
+  <widgets xsi:type="model:Group" x="208" y="83" width="169" height="107" text="Indicator Settings" measuredWidth="169" measuredHeight="107"/>
+  <widgets xsi:type="model:Link" x="212" y="210" text="Start Realtime Indicator" measuredWidth="117" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" x="212" y="230" text="Open Chart" measuredWidth="59" measuredHeight="21">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

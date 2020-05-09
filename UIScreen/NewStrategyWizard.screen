@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Window" x="88" y="72" width="534" height="419" text="New Strategy Flow" measuredWidth="534" measuredHeight="419"/>
+  <widgets xsi:type="model:Rectangle" x="88" y="152" width="534" height="297" measuredWidth="534" measuredHeight="297">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="98" y="164" width="513" height="269" text="General Information" measuredWidth="513" measuredHeight="269"/>
+  <widgets xsi:type="model:Label" x="102" y="101" text="Strategy-Pattern" measuredWidth="144" measuredHeight="27">
+    <font size="12" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="132" y="125" text="Create New Strategy-Pattern flow diagram" measuredWidth="211" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" x="560" y="98" measuredWidth="48" measuredHeight="48" icon="image (xlarge)"/>
+  <widgets xsi:type="model:Button" x="472" y="458" width="71" text="Finish" measuredWidth="71" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="548" y="458" width="63" text="Cancel" measuredWidth="63" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" x="95" y="453" measuredWidth="16" measuredHeight="16" icon="help (small)"/>
+  <widgets xsi:type="model:Label" x="110" y="184" text="Name :" measuredWidth="39" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="176" y="184" width="417" measuredWidth="417" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="110" y="219" text="File name :" measuredWidth="57" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="176" y="219" width="417" measuredWidth="417" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="110" y="259" text="Description :" measuredWidth="65" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextArea" x="176" y="259" width="417" height="164" measuredWidth="417" measuredHeight="164">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

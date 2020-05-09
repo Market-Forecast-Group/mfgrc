@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Input Prices DB
+Bundle-SymbolicName: com.mfg.inputdb.prices
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.mfg.inputdb.prices.Activator
+Bundle-Vendor: MFG
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.mfg.mdb.runtime;bundle-version="1.0.0",
+ com.mfg.utils;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: com.mfg.inputdb.prices,
+ com.mfg.inputdb.prices.mdb

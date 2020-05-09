@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+         <page
+            category="com.mfg.dm.preferences"
+            class="com.mfg.connector.dfs.prefs.DFSDataProviderPreferencePage"
+            id="com.mfg.connector.dfs.prefs"
+            name="DFS">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="com.mfg.connector.dfs.DFSStartup">
+      </startup>
+   </extension>
+
+</plugin>

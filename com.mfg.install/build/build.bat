@@ -1,0 +1,1 @@
+launch4j.exe l4j.xml

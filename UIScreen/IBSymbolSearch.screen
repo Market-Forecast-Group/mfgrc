@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Window" x="112" y="46" width="593" height="425" text="Search" measuredWidth="593" measuredHeight="425"/>
+  <widgets xsi:type="model:TabbedPane" x="129" y="84" width="568" height="349" text="IB Symbol Search,MFG Log Search,DFSA Search" measuredWidth="568" measuredHeight="349" selection="0">
+    <items x="10" y="0" width="103" height="23" text="IB Symbol Search"/>
+    <items x="113" y="0" width="97" height="23" text="MFG Log Search"/>
+    <items x="210" y="0" width="82" height="23" text="DFSA Search"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="488" y="438" width="73" text="Replace..." measuredWidth="73" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="568" y="438" width="57" text="Search" measuredWidth="57" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="630" y="438" width="57" text="Cancel" measuredWidth="57" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="129" y="438" width="96" text="Customize..." measuredWidth="96" measuredHeight="23" icon="help (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Combo" x="304" y="220" width="139" text="GLOBEX" measuredWidth="139" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="139" y="128" width="70" text="Symbol:" measuredWidth="70" measuredHeight="21" iconPosition="top">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="139" y="148" width="231" text="ES #F" measuredWidth="231" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Checkbox" x="377" y="148" text="Case sensitive" measuredWidth="90" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="304" y="200" width="147" text="Exchange:" measuredWidth="147" measuredHeight="21" iconPosition="top">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Combo" x="456" y="220" width="139" text="USD" measuredWidth="139" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="456" y="200" width="147" text="Currency:" measuredWidth="147" measuredHeight="21" iconPosition="top">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Combo" x="139" y="220" width="139" text="FUT" measuredWidth="139" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="139" y="200" width="147" text="Instrument Type:" measuredWidth="147" measuredHeight="21" iconPosition="top">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="139" y="272" width="548" height="81" text="Expiration" measuredWidth="548" measuredHeight="81"/>
+  <widgets xsi:type="model:Combo" x="149" y="312" width="139" measuredWidth="139" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="149" y="292" width="147" text="Expir. Year:" measuredWidth="147" measuredHeight="21" iconPosition="top">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Combo" x="343" y="312" width="139" measuredWidth="139" measuredHeight="21" state="disabled">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="343" y="292" width="147" text="Expir. Month:" measuredWidth="147" measuredHeight="21" iconPosition="top">
+    <font bold="true"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

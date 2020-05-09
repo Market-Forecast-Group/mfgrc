@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Rectangle" x="136" y="8" width="441" height="657" measuredWidth="441" measuredHeight="657">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="136" y="17" width="441" height="649" text="DFSA Explorer" measuredWidth="441" measuredHeight="649" selection="0">
+    <items x="10" y="0" width="89" height="23" text="DFSA Explorer"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="493" y="12" width="25" measuredWidth="25" measuredHeight="23" icon="database (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="519" y="12" width="25" measuredWidth="25" measuredHeight="23" icon="curved-arrow-down (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="545" y="12" width="25" measuredWidth="25" measuredHeight="23" icon="curved-arrow-up (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tree" x="136" y="39" width="441" height="626" text="Database Connections&#xA;-eSignal-DB&#xA;-IB-DB" measuredWidth="441" measuredHeight="626">
+    <items x="0" y="5" width="441" height="20" text="Database Connections"/>
+    <items x="0" y="25" width="441" height="20" text="-eSignal-DB"/>
+    <items x="0" y="45" width="441" height="20" text="-IB-DB"/>
+  </widgets>
+  <widgets xsi:type="model:Popup" x="216" y="96" text="New,>&#xA;---&#xA;v Connect&#xA;Disconnect&#xA;Ping&#xA;---&#xA;Rename,F2&#xA;{delete} Delete,delete&#xA;Duplicate&#xA;---&#xA;Refresh,F5" measuredWidth="130" measuredHeight="213">
+    <items x="0" y="2" width="130" height="22" text="New,>"/>
+    <items x="0" y="24" width="130" height="11" text="---"/>
+    <items x="0" y="35" width="130" height="22" text="v Connect"/>
+    <items x="0" y="57" width="130" height="22" text="Disconnect"/>
+    <items x="0" y="79" width="130" height="22" text="Ping"/>
+    <items x="0" y="101" width="130" height="11" text="---"/>
+    <items x="0" y="112" width="130" height="22" text="Rename,F2"/>
+    <items x="0" y="134" width="130" height="22" text="{delete} Delete,delete"/>
+    <items x="0" y="156" width="130" height="22" text="Duplicate"/>
+    <items x="0" y="178" width="130" height="11" text="---"/>
+    <items x="0" y="189" width="130" height="22" text="Refresh,F5"/>
+  </widgets>
+  <widgets xsi:type="model:Popup" x="345" y="96" text="Run Configuration" measuredWidth="116" measuredHeight="26">
+    <items x="0" y="2" width="116" height="22" text="Run Configuration"/>
+  </widgets>
+  <widgets xsi:type="model:Popup" x="272" y="50" text="New,>" measuredWidth="106" measuredHeight="26">
+    <items x="0" y="2" width="106" height="22" text="New,>"/>
+  </widgets>
+  <widgets xsi:type="model:Popup" x="378" y="50" text="{database}Database" measuredWidth="72" measuredHeight="26">
+    <items x="0" y="2" width="72" height="22" text="{database}Database"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

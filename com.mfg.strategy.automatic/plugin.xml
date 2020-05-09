@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.exportWizards">
+      <wizard
+            category="com.mfg.strategy.indicator"
+            class="com.mfg.strategy.automatic.exportIndicator.ExportIndicatorWizard"
+            icon="icons/indicator.ico"
+            id="com.mfg.strategy.automatic.exportIndicator.ExportIndicatorWizard"
+            name="Export Indicator">
+      </wizard>
+      <category
+            id="com.mfg.strategy.indicator"
+            name="Indicator">
+      </category>
+   </extension>
+
+</plugin>

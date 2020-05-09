@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Window" x="112" y="46" width="593" height="425" text="Search" measuredWidth="593" measuredHeight="425"/>
+  <widgets xsi:type="model:TabbedPane" x="129" y="84" width="568" height="349" text="IB Symbol Search,MFG Log Search,DFSA Search" measuredWidth="568" measuredHeight="349" selection="2">
+    <items x="10" y="0" width="103" height="23" text="IB Symbol Search"/>
+    <items x="113" y="0" width="97" height="23" text="MFG Log Search"/>
+    <items x="210" y="0" width="82" height="23" text="DFSA Search"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="488" y="438" width="73" text="Replace..." measuredWidth="73" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="568" y="438" width="57" text="Search" measuredWidth="57" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="630" y="438" width="57" text="Cancel" measuredWidth="57" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="129" y="438" width="96" text="Customize..." measuredWidth="96" measuredHeight="23" icon="help (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="139" y="176" width="541" height="53" text="Date Limit" measuredWidth="541" measuredHeight="53"/>
+  <widgets xsi:type="model:Combo" x="216" y="192" width="81" measuredWidth="81" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="147" y="192" width="62" text="StartDate" measuredWidth="62" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Combo" x="384" y="192" width="81" text=" " measuredWidth="81" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="323" y="192" width="62" text="End Date" measuredWidth="62" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="142" y="136" text="Symbol :" measuredWidth="46" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="208" y="136" width="156" text="ES" measuredWidth="156" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="403" y="136" text="Interval :" measuredWidth="50" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="469" y="136" width="156" text="Daily Bars" measuredWidth="156" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Checkbox" x="139" y="248" text="Show gaps" measuredWidth="73" measuredHeight="21" selected="true">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

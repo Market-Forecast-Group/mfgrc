@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:TabbedPane" x="128" y="40" width="201" height="297" text="Navigator" measuredWidth="201" measuredHeight="297" selection="0">
+    <items x="10" y="0" width="67" height="23" text="Navigator"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tree" x="138" y="73" width="181" height="254" text="v Trading&#xA;-[-] RT Indicator 1&#xA;--[-] Group 1&#xA;--- Trade 1&#xA;--- Trade 2&#xA;---[+] Group 2&#xA;-[-] RT Indicator 2&#xA;--[+] Group 1" measuredWidth="181" measuredHeight="254">
+    <items x="0" y="5" width="181" height="20" text="v Trading"/>
+    <items x="0" y="25" width="181" height="20" text="-[-] RT Indicator 1"/>
+    <items x="0" y="45" width="181" height="20" text="--[-] Group 1"/>
+    <items x="0" y="65" width="181" height="20" text="--- Trade 1"/>
+    <items x="0" y="85" width="181" height="20" text="--- Trade 2"/>
+    <items x="0" y="105" width="181" height="20" text="---[+] Group 2"/>
+    <items x="0" y="125" width="181" height="20" text="-[-] RT Indicator 2"/>
+    <items x="0" y="145" width="181" height="20" text="--[+] Group 1"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

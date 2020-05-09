@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MFG Chart Model
+Bundle-SymbolicName: com.mfg.chart.model;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.mfg.chart.model.ChartModelPlugin
+Bundle-Vendor: MFG
+Require-Bundle: org.eclipse.core.runtime,
+ com.mfg.logger;bundle-version="1.0.0",
+ org.eclipse.ui;bundle-version="3.6.2",
+ com.mfg.utils;bundle-version="1.0.0",
+ org.mfg.mdb.runtime,
+ com.mfg.inputdb.indicator;bundle-version="1.0.0",
+ com.mfg.inputdb.prices;bundle-version="1.0.0",
+ com.mfg.tradingdb;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: com.mfg.chart.model,
+ com.mfg.chart.model.mdb,
+ com.mfg.chart.model.mdb.recorders

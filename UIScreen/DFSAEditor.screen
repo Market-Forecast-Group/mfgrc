@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:TabbedPane" x="33" y="59" width="872" height="518" text="DFSA" measuredWidth="872" measuredHeight="518" selection="0">
+    <items x="10" y="0" width="48" height="27" text="DFSA"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" x="33" y="82" width="872" height="495" text="Overview,Data Provider,Scheduler" measuredWidth="872" measuredHeight="495" selection="0" position="bottom">
+    <items x="10" y="468" width="69" height="27" text="Overview"/>
+    <items x="79" y="468" width="91" height="27" text="Data Provider"/>
+    <items x="170" y="468" width="72" height="27" text="Scheduler"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HLine" x="33" y="136" width="872" measuredWidth="872" measuredHeight="6"/>
+  <widgets xsi:type="model:Button" x="804" y="92" width="26" locked="true" measuredWidth="26" measuredHeight="25" icon="bar-chart (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="833" y="92" width="26" locked="true" measuredWidth="26" measuredHeight="25" icon="options (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VLine" x="796" y="93" height="21" locked="true" measuredWidth="6" measuredHeight="21"/>
+  <widgets xsi:type="model:Label" x="39" y="103" text="Saving Data to DB" measuredWidth="166" measuredHeight="33">
+    <font size="14" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="43" y="160" width="406" height="193" text="Contract" measuredWidth="406" measuredHeight="193"/>
+  <widgets xsi:type="model:Group" x="500" y="160" width="395" height="95" text="Database" measuredWidth="395" measuredHeight="95"/>
+  <widgets xsi:type="model:Group" x="500" y="376" width="395" height="89" text="Saving" measuredWidth="395" measuredHeight="89"/>
+  <widgets xsi:type="model:Link" x="544" y="400" text="Start DB Saving" measuredWidth="83" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Circle" x="515" y="398" width="25" height="25" measuredWidth="25" measuredHeight="25" icon="play (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" x="48" y="380" text="Update Data Provider Settings..." measuredWidth="169" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="54" y="188" text="Name :" measuredWidth="43" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="101" y="188" width="156" text="Text field" measuredWidth="156" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="54" y="221" text="Symbol :" measuredWidth="51" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" x="101" y="221" width="156" text="Text field" measuredWidth="156" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="52" y="254" text="Tick Size :" measuredWidth="56" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Spinner" x="101" y="255" width="76" text="25" measuredWidth="76" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="52" y="287" text="Scale :" measuredWidth="38" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Spinner" x="101" y="288" width="76" text="2" measuredWidth="76" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="870" y="92" width="26" locked="true" measuredWidth="26" measuredHeight="25" icon="help (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VLine" x="862" y="93" height="21" locked="true" measuredWidth="6" measuredHeight="21"/>
+  <widgets xsi:type="model:ColorPicker" x="761" y="93" locked="true" measuredWidth="33" measuredHeight="23" background="#ffffff"/>
+  <widgets xsi:type="model:Icon" x="766" y="96" measuredWidth="16" measuredHeight="16" icon="play (small)"/>
+  <widgets xsi:type="model:Link" x="48" y="401" text="Update DB Settings..." measuredWidth="113" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="513" y="188" text="Name :" measuredWidth="43" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" x="500" y="264" width="395" height="89" text="Scheduler" measuredWidth="395" measuredHeight="89"/>
+  <widgets xsi:type="model:Label" x="551" y="298" text="Next scheduled save will be at {time}" measuredWidth="197" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" x="529" y="301" measuredWidth="16" measuredHeight="16" icon="history (small)"/>
+  <widgets xsi:type="model:Combo" x="555" y="188" width="134" text="Combo" measuredWidth="134" measuredHeight="23">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

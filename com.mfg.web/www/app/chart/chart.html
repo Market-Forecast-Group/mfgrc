@@ -1,0 +1,80 @@
+<div ng-controller="ChartCtrl" class="row">
+
+	<div ng-show="!showChartCanvas" class="alert alert-info">Go to
+		"Symbols" and select a configuration to be shown in the chart.</div>
+	<div ng-controller="ChartPanelCtrl">
+		<div class="panel panel-default" ng-show="showChartCanvas">
+			<div class="panel-body valign">
+				<label ng-bind="node.displayName" class="pull-left"></label>
+				
+				<div class="btn-group pull-right" role="group" aria-label="...">
+
+					<!-- scroll start -->
+					<button ng-show="hasData" ng-click="scrollStart()" type="button" class="btn btn-default">
+						<i class="fa fa-fw fa-chevron-left"></i>
+					</button>
+
+					<!-- scroll end -->
+					<button ng-show="hasData" ng-click="scrollEnd()" type="button" class="btn btn-default">
+						<i class="fa fa-fw fa-chevron-right"></i>
+					</button>
+
+
+					<!-- layer 0 -->
+
+
+					<button type="button" class="btn btn-default"
+						ng-show="hasData && (dataLayer != 0)" ng-click="swapLayer(0)">R</button>
+
+					<button type="button" class="btn btn-default active"
+						data-toggle="button" aria-pressed="true"
+						ng-show="hasData && (dataLayer == 0)" ng-click="swapLayer(0)">R</button>
+
+
+
+					<!-- layer 1 -->
+
+
+					<button type="button" class="btn btn-default"
+						ng-show="hasData && (dataLayer != 1)" ng-click="swapLayer(1)">M</button>
+
+					<button type="button" class="btn btn-default active"
+						data-toggle="button" aria-pressed="true"
+						ng-show="hasData && (dataLayer == 1)" ng-click="swapLayer(1)">M</button>
+
+
+
+					<!-- layer 2 -->
+
+
+					<button type="button" class="btn btn-default"
+						ng-show="hasData && (dataLayer != 2)" ng-click="swapLayer(2)">D</button>
+
+					<button type="button" class="btn btn-default active"
+						data-toggle="button" aria-pressed="true"
+						ng-show="hasData && (dataLayer == 2)" ng-click="swapLayer(2)">D</button>
+
+					<button type="button" class="btn btn-default"
+						ng-show="hasData && hasIndicatorData" ng-click="changeScale(-1)">
+						<i class="fa fa-fw fa-arrow-down"></i> {{scaleRange.start}}
+					</button>
+					<button type="button" class="btn btn-default"
+						ng-show="hasData && hasIndicatorData" ng-click="changeScale(1)">
+						<i class="fa fa-fw fa-arrow-up"></i> {{scaleRange.stop}}
+					</button>
+
+					<button type="button" class="btn btn-default" ng-show="!hasData"
+						ng-click="requestData()">Request</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="panel panel-default" ng-show="showChartCanvas">
+		<div class="panel-body">
+			<canvas id="chart1" style="width: 100%; height: 600px">
+            </canvas>
+			<span id="debugLabel"></span>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,236 @@
+{
+    "bufferSize": 100,
+    "name": "Logger",
+    "packageName": "com.mfg.logger.mdb",
+    "source": "/home/arian/Documents/Source/mfgrc/com.mfg.logger/src",
+    "tables": [{
+        "columns": [
+            {
+                "formula": "",
+                "name": "ID",
+                "order": "NONE",
+                "type": "INTEGER",
+                "uuid": "b8aa657d-2fe1-4897-b3ed-efbea3bdde26",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "timeGeneral",
+                "order": "ASCENDING",
+                "type": "LONG",
+                "uuid": "422eddd9-19f0-4114-baca-3443db2a5282",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "priority",
+                "order": "NONE",
+                "type": "FLOAT",
+                "uuid": "c9a2843d-67af-46d1-a66f-f1a93ee838d0",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "source",
+                "order": "NONE",
+                "type": "INTEGER",
+                "uuid": "34c47ddb-453e-4935-8ec8-e7a2d204e1d3",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "time",
+                "order": "NONE",
+                "type": "LONG",
+                "uuid": "8596a7c0-60b2-4280-b8a7-df819d0165ae",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "price",
+                "order": "NONE",
+                "type": "LONG",
+                "uuid": "81025ac2-8406-4e52-86e8-e245b772d433",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "thTime",
+                "order": "NONE",
+                "type": "LONG",
+                "uuid": "e1317417-2b91-42fe-8102-fd782a90cb78",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "thPrice",
+                "order": "NONE",
+                "type": "LONG",
+                "uuid": "0e7129c3-57f4-4a36-a769-ab5d9ade9251",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "targetPrice",
+                "order": "NONE",
+                "type": "LONG",
+                "uuid": "5c5abb84-850e-4189-b52c-4f241793c6d1",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "timeCPU",
+                "order": "NONE",
+                "type": "LONG",
+                "uuid": "e52f58b7-980d-40c7-a3ea-123f776232c6",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "probVersion",
+                "order": "NONE",
+                "type": "INTEGER",
+                "uuid": "d757f244-a340-429f-acd4-70e41d4eaa59",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "classID",
+                "order": "NONE",
+                "type": "INTEGER",
+                "uuid": "3f7d34bb-91db-48b9-8910-494404adf14e",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "hhllIndex",
+                "order": "NONE",
+                "type": "INTEGER",
+                "uuid": "7dc38547-5b70-4e1a-b043-922e342de5bf",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "thIndex",
+                "order": "NONE",
+                "type": "INTEGER",
+                "uuid": "52e7a182-86ea-406d-8315-69642dd05fdb",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "msgIndex",
+                "order": "ASCENDING",
+                "type": "INTEGER",
+                "uuid": "f6c25839-1f86-45be-9b8b-c64e7da0425e",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "baseScaleCluster",
+                "order": "NONE",
+                "type": "INTEGER",
+                "uuid": "88b9c945-7980-41f6-8960-e5010b890225",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "scale",
+                "order": "NONE",
+                "type": "INTEGER",
+                "uuid": "47011328-5372-49dc-b68c-a746df687e64",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "p0Time",
+                "order": "NONE",
+                "type": "LONG",
+                "uuid": "fa01072a-87b7-4bd4-83d9-ae056fd90cae",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "p0Price",
+                "order": "NONE",
+                "type": "LONG",
+                "uuid": "ee5306e5-99a8-4f71-ba9d-fc9502208244",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "pm1Time",
+                "order": "NONE",
+                "type": "LONG",
+                "uuid": "7dbc06bf-514e-40e8-916c-d9d51aad01e8",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "pm1Price",
+                "order": "NONE",
+                "type": "LONG",
+                "uuid": "07e6c2b6-6896-429e-94f1-8733567d9df6",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "pid",
+                "order": "NONE",
+                "type": "INTEGER",
+                "uuid": "2b961434-2f02-4270-a6d7-9ffc6937c0cd",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "clusterID",
+                "order": "NONE",
+                "type": "INTEGER",
+                "uuid": "455f1a9f-005e-496f-ba12-502ee47277b5",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "textIndex",
+                "order": "NONE",
+                "type": "INTEGER",
+                "uuid": "1b0eeadc-a14f-426b-9788-ff0b4564f2a9",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "textSize",
+                "order": "NONE",
+                "type": "INTEGER",
+                "uuid": "cc6eace7-7e3f-4a4e-9a4f-3707e8a814a3",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "strMessage",
+                "order": "NONE",
+                "type": "STRING",
+                "uuid": "b8e5f183-f767-49ce-b77f-af83ae4aa6a2",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "patternID",
+                "order": "NONE",
+                "type": "INTEGER",
+                "uuid": "757f8468-6efd-4437-a76e-b1c9fba18e43",
+                "virtual": false
+            },
+            {
+                "formula": "",
+                "name": "dirContrarian",
+                "order": "NONE",
+                "type": "BOOLEAN",
+                "uuid": "eac45ecb-6ece-4b66-be47-77cbea296dab",
+                "virtual": false
+            }
+        ],
+        "name": "Log",
+        "uuid": "8248ffbf-c3bb-483f-a170-502e1c690729"
+    }]
+}
