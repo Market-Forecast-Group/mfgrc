@@ -155,10 +155,13 @@
             name="appName"
             value="MFG">
       </property>
-      <property name="preferenceCustomization" value="plugin_customization.ini"/>
 		<property name="startupProgressRect" value="2,313,561,15"/>
 		<property name="startupMessageRect" value="7,290,441,20"/>
 		<property name="startupForegroundColor" value="000000"/>
+  <property
+        name="preferenceCustomization"
+        value="plugin_customization.ini">
+  </property>
    </product>
 </extension>
 <!--

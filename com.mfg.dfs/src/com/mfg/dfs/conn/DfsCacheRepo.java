@@ -39,7 +39,6 @@ import com.mfg.dfs.data.SymbolData;
 import com.mfg.dfs.data.TimeHistoryTable;
 import com.mfg.dfs.misc.IDataFeed;
 import com.mfg.utils.U;
-import com.sun.istack.internal.NotNull;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.converters.reflection.ReflectionConverter;
 
@@ -780,7 +779,7 @@ public class DfsCacheRepo {
 	 * @param prefix
 	 *            the prefix to be removed.
 	 */
-	public void removeSymbol(@NotNull String prefix) {
+	public void removeSymbol(String prefix) {
 		if (_symbols.containsKey(prefix)) {
 			_symbols.remove(prefix);
 			debug_var(399332, "Symbol ", prefix, " successfuly removed");

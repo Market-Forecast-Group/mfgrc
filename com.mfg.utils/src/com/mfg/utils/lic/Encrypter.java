@@ -1,12 +1,10 @@
 package com.mfg.utils.lic;
 
 import java.security.Key;
+import java.util.Base64;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
-
-import sun.misc.BASE64Decoder;
-import sun.misc.BASE64Encoder;
 
 public class Encrypter {
 	// http://www.code2learn.com/2011/06/encryption-and-decryption-of-data-using.html
@@ -19,7 +17,7 @@ public class Encrypter {
 		Cipher c = Cipher.getInstance(ALGO);
 		c.init(Cipher.ENCRYPT_MODE, key);
 		byte[] encVal = c.doFinal(Data.getBytes());
-		String encryptedValue = new BASE64Encoder().encode(encVal);
+		String encryptedValue = Base64.getEncoder().encodeToString(encVal);
 		return encryptedValue;
 	}
 
@@ -27,7 +25,7 @@ public class Encrypter {
 		Key key = generateKey();
 		Cipher c = Cipher.getInstance(ALGO);
 		c.init(Cipher.DECRYPT_MODE, key);
-		byte[] decordedValue = new BASE64Decoder().decodeBuffer(encryptedData);
+		byte[] decordedValue = Base64.getDecoder().decode(encryptedData);
 		byte[] decValue = c.doFinal(decordedValue);
 		String decryptedValue = new String(decValue);
 		return decryptedValue;

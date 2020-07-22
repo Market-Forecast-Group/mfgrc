@@ -17,6 +17,8 @@ Export-Package: com.mfg.common,
  com.mfg.utils.ui.actions,
  com.mfg.utils.ui.bindings,
  com.mfg.utils.ui.table,
+ javax.xml.bind,
+ javax.xml.bind.annotation,
  org.apache.log4j,
  org.json
 Require-Bundle: org.eclipse.swt,
@@ -35,6 +37,7 @@ Require-Bundle: org.eclipse.swt,
 Import-Package: com.ibm.icu.text
 Bundle-ClassPath: lib/json.jar,
  lib/log4j-1.2.16.jar,
+ lib/jaxb-api-2.4.0-b180830.0359.jar,
  .
 Bundle-Activator: com.mfg.utils.UtilsPlugin
 Bundle-ActivationPolicy: lazy

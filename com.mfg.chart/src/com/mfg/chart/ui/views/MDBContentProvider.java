@@ -24,7 +24,7 @@ import org.mfg.mdb.runtime.MDB;
  * 
  */
 public class MDBContentProvider implements ILazyContentProvider {
-	private MDB<?> mdb;
+	private MDB<IRecord> mdb;
 	private TableViewer viewer;
 
 	public static class Row {
@@ -52,7 +52,7 @@ public class MDBContentProvider implements ILazyContentProvider {
 	public void inputChanged(Viewer viewer1, Object oldInput, Object newInput) {
 		this.viewer = (TableViewer) viewer1;
 		if (newInput != null && newInput instanceof MDB) {
-			this.mdb = (MDB<?>) newInput;
+			this.mdb = (MDB<IRecord>) newInput;
 			try {
 				this.viewer.getTable().setItemCount((int) mdb.size());
 			} catch (IOException e) {
