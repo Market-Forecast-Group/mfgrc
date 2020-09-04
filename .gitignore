@@ -11,7 +11,7 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
+#*.jar
 *.war
 *.nar
 *.ear
@@ -41,7 +41,7 @@ syntax: glob
 Setup\setup_exe\jre
 Setup\setup_exe\MFG
 Setup\base\MFG
-*.jar
+#*.jar
 *.zip
 
 ext/json.jar
@@ -61,6 +61,7 @@ com.mfg.chart/nativewindow_awt.dll
 com.mfg.chart/jogl_desktop.dll
 com.mfg.chart/jogl_cg.dll
 com.mfg.chart/gluegen-rt.dll
+com.mfg.install/build/**
 #com.mfg.web/www/_resources
 #com.mfg.web/www/app/bower_components
 #com.mfg.web/www/app/bower_components/datatables-plugins
@@ -74,9 +75,9 @@ com.mfg.chart/gluegen-rt.dll
 syntax: regexp
 .*/doc/.*
 
-.*/lib/.*\.jar
+#.*/lib/.*\.jar
 
-.*/lib/.*\.dll
+#.*/lib/.*\.dll
 .*/bin/*
 
 #backup vim files
