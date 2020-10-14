@@ -1,0 +1,100 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mfg</groupId>
+  <artifactId>releng</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+ <properties>
+  <tycho.version>2.0.0</tycho.version>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  <eclipse-repo.url>http://download.eclipse.org/releases/latest</eclipse-repo.url>
+ </properties>
+
+ <repositories>
+  <repository>
+   <id>eclipse-release</id>
+   <url>${eclipse-repo.url}</url>
+   <layout>p2</layout>
+  </repository>
+ </repositories>
+
+ <build>
+  <plugins>
+   <plugin>
+    <groupId>org.eclipse.tycho</groupId>
+    <artifactId>tycho-maven-plugin</artifactId>
+    <version>${tycho.version}</version>
+    <extensions>true</extensions>
+   </plugin>
+   <!--Enable the replacement of the SNAPSHOT version in the final product configuration-->
+   <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+            <artifactId>tycho-packaging-plugin</artifactId>
+             <version>${tycho.version}</version>
+             <executions>
+              <execution>
+                <phase>package</phase>
+                <id>package-feature</id>
+                    <configuration>
+                        <finalName>${project.artifactId}_${unqualifiedVersion}.${buildQualifier}</finalName>
+                    </configuration>
+            </execution>
+        </executions>
+    </plugin>
+    <plugin>
+    <groupId>org.eclipse.tycho</groupId>
+    <artifactId>target-platform-configuration</artifactId>
+    <version>${tycho.version}</version>
+    <configuration>
+     <!-- Optional set the Java version your are using-->
+      <!--   <executionEnvironment>JavaSE-14</executionEnvironment>-->
+     <environments>
+      <environment>
+       <os>linux</os>
+       <ws>gtk</ws>
+       <arch>x86_64</arch>
+      </environment>
+      <environment>
+       <os>win32</os>
+       <ws>win32</ws>
+       <arch>x86_64</arch>
+      </environment>
+      <!-- <environment>
+       <os>macosx</os>
+       <ws>cocoa</ws>
+       <arch>x86_64</arch>
+      </environment>
+    -->
+     </environments>
+    </configuration>
+   </plugin>
+  </plugins>
+ </build>
+
+  <modules>  
+      <module>com.mfg.dm</module>
+      <module>com.mfg.utils</module>
+      <module>com.mfg.persist.interfaces</module>
+      <module>com.mfg.broker</module>
+      <module>com.mfg.chart.model</module>
+      <module>com.mfg.logger</module>
+      <module>com.mfg.interfaces</module>
+      <module>com.mfg.inputdb.indicator</module>
+      <module>com.mfg.inputdb.prices</module>
+      <module>com.mfg.tradingdb</module>
+      <module>com.mfg.widget</module>
+      <module>com.mfg.dfs</module>
+      <module>com.mfg.ui</module>
+      <module>com.mfg.plstats</module>
+      <module>com.mfg.connector.csv</module>
+      <module>com.mfg.strategy.builder</module>
+      <module>com.mfg.symbols</module>
+      <module>com.mfg.chart</module>
+      <module>com.mfg.strategy.automatic</module>
+      <module>com.mfg.connector.dfs</module>
+      <module>com.marketforecastgroup.dfsa</module>
+      <module>com.marketforecastgroup.logger.ui</module>
+      <module>com.marketforescastgroup.logger</module>
+ </modules>
+</project>
