@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="MFG" id="com.mfg.application.product" application="com.mfg.application.application" version="1.0" useFeatures="true" includeLaunchers="true">
+<product name="MFG" uid="com.mfg" id="com.mfg.application.product" application="com.mfg.application.application" version="1.0" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/com.mfg.application/icons/115x164.gif"/>
@@ -26,9 +26,12 @@ http://www.marketforecastgroup.com
    </configIni>
 
    <launcherArgs>
-      <programArgs>-data @noDefault</programArgs>
-      <vmArgs>-Xms512M -Xmx1G -Djogamp.gluegen.UseTempJarCache</vmArgs>
-      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+      <programArgs>-data @noDefault
+      </programArgs>
+      <vmArgs>-Xms512M -Xmx1G -Djogamp.gluegen.UseTempJarCache
+      </vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
    </launcherArgs>
 
    <windowImages i16="/com.mfg.application/icons/16x16.32bits.gif" i32="/com.mfg.application/icons/32x32.32bits.gif" i48="/com.mfg.application/icons/48x48.32bits.gif" i64="/com.mfg.application/icons/64x64.32bits.gif" i128="/com.mfg.application/icons/128x128.32bits.gif"/>
@@ -39,7 +42,6 @@ http://www.marketforecastgroup.com
       startupMessageRect="7,290,441,20"
       startupForegroundColor="000000" />
    <launcher name="MFG.exe">
-      <solaris/>
       <win useIco="false">
          <bmp
             winSmallHigh="/com.mfg.application/icons/16x16.32bits.bmp"
