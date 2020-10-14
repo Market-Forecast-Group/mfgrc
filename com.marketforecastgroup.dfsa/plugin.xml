@@ -3,7 +3,7 @@
 <plugin>
    <extension-point id="splashExtension" name="Splash Extensions" schema="schema/splashExtension.exsd"/>
 
-   <extension
+   <!-- <extension
          id="application"
          point="org.eclipse.core.runtime.applications">
       <application>
@@ -12,6 +12,7 @@
          </run>
       </application>
    </extension>
+   -->
    <extension
          point="org.eclipse.ui.perspectives">
       <perspective
@@ -198,7 +199,7 @@
             name="Details...">
       </command>
    </extension>
-<extension
+<!-- <extension
       id="product"
       point="org.eclipse.core.runtime.products">
    <product
@@ -226,6 +227,7 @@
       </property>
    </product>
 </extension>
+-->
 <extension
       point="org.eclipse.ui.services">
    <sourceProvider

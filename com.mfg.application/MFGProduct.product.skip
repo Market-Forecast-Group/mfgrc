@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="MFG" uid="com.mfg" id="com.mfg.application.product" application="com.mfg.application.application" version="1.0" useFeatures="true" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="/com.mfg.application/icons/115x164.gif"/>
+      <text>
+         MFGRC
+Market Forecast Group Rich Client is based on Eclipse RCP
+
+Version: 1.0.0
+Build id: 20131125-0001
+
+Developed by MFG Team
+Designs by Julio Medina
+
+(C) Copyright  2014 - MFG. All rights reserved.
+
+This product and the acompanying materials are property of Giulio Rugarli.
+http://www.marketforecastgroup.com
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-data @noDefault
+      </programArgs>
+      <vmArgs>-Xms512M -Xmx1G -Djogamp.gluegen.UseTempJarCache
+      </vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/com.mfg.application/icons/16x16.32bits.gif" i32="/com.mfg.application/icons/32x32.32bits.gif" i48="/com.mfg.application/icons/48x48.32bits.gif" i64="/com.mfg.application/icons/64x64.32bits.gif" i128="/com.mfg.application/icons/128x128.32bits.gif"/>
+
+   <splash
+      location="com.mfg.application"
+      startupProgressRect="2,313,561,15"
+      startupMessageRect="7,290,441,20"
+      startupForegroundColor="000000" />
+   <launcher name="MFG">
+      <win useIco="false">
+         <bmp
+            winSmallHigh="/com.mfg.application/icons/16x16.32bits.bmp"
+            winMediumHigh="/com.mfg.application/icons/32x32.32bits.bmp"
+            winLargeHigh="/com.mfg.application/icons/48x48.32bits.bmp"
+            winExtraLargeHigh="/com.mfg.application/icons/256x256.32bits.bmp"/>
+      </win>
+   </launcher>
+
+   <vm>
+      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7</windows>
+   </vm>
+
+   <license>
+        <url>http://www.marketforecastgroup.com/MFGRC</url>
+        <text>
+   (C) Copyright  2013 - MFG. All rights reserved.
+This program and the acompanying materials are property of Giulio Rugarli.
+http://www.marketforecastgroup.com
+         </text>
+   </license>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="org.eclipse.equinox.p2.core.feature"/>
+      <feature id="org.eclipse.e4.rcp"/>
+      <feature id="org.eclipse.emf.ecore" installMode="root"/>
+      <feature id="org.eclipse.equinox.p2.user.ui" installMode="root"/>
+      <feature id="org.eclipse.equinox.p2.extras.feature" installMode="root"/>
+      <feature id="org.eclipse.emf.common" installMode="root"/>
+      <feature id="org.eclipse.ecf.core.feature" installMode="root"/>
+      <feature id="org.eclipse.ecf.filetransfer.httpclient45.feature" installMode="root"/>
+      <feature id="org.eclipse.rcp" installMode="root"/>
+      <feature id="org.eclipse.equinox.p2.discovery.feature" installMode="root"/>
+      <feature id="org.eclipse.equinox.p2.rcp.feature" installMode="root"/>
+      <feature id="org.eclipse.ecf.filetransfer.feature" installMode="root"/>
+      <feature id="org.eclipse.ecf.core.ssl.feature" installMode="root"/>
+      <feature id="org.eclipse.ecf.filetransfer.ssl.feature" installMode="root"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+   </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>

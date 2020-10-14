@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Data Feed and Storage Agent" id="com.marketforecastgroup.dfsa.product" application="com.marketforecastgroup.dfsa.application" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Data Feed and Storage Agent" uid="com.mfg.dfsa" id="com.marketforecastgroup.dfsa.product" application="com.marketforecastgroup.dfsa.application" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="icons/about.gif"/>
@@ -23,7 +23,8 @@ This program and the accompanying materials are proprietary of Giulio Rugarli.
    </configIni>
 
    <launcherArgs>
-      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
    </launcherArgs>
 
    <windowImages i16="/com.marketforecastgroup.dfsa/icons/launcherrs.bmp"/>
@@ -32,7 +33,6 @@ This program and the accompanying materials are proprietary of Giulio Rugarli.
       location="com.marketforecastgroup.dfsa"
       handlerType="interactive" />
    <launcher name="DFSA">
-      <solaris/>
       <win useIco="false">
          <bmp
             winSmallHigh="/com.marketforecastgroup.dfsa/icons/launcherrs.bmp"/>
@@ -44,7 +44,6 @@ This program and the accompanying materials are proprietary of Giulio Rugarli.
 
    <plugins>
       <plugin id="com.ibm.icu"/>
-      <plugin id="com.jdfsarc.database"/>
       <plugin id="com.jdfsarc.dataprovider"/>
       <plugin id="com.marketforecastgroup.dfsa"/>
       <plugin id="com.marketforecastgroup.schedule"/>
@@ -57,7 +56,6 @@ This program and the accompanying materials are proprietary of Giulio Rugarli.
       <plugin id="org.eclipse.core.expressions"/>
       <plugin id="org.eclipse.core.jobs"/>
       <plugin id="org.eclipse.core.runtime"/>
-      <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
       <plugin id="org.eclipse.ecf"/>
       <plugin id="org.eclipse.ecf.filetransfer"/>
       <plugin id="org.eclipse.ecf.identity"/>

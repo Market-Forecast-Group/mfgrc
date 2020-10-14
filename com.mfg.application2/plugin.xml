@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+ <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.mfg.application.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="com.mfg.application.Perspective"
+            icon="icons/trade.ico"
+            id="com.mfg.application.perspective"
+            name="Trading">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               id="file"
+               label="File "
+               mnemonic="F">
+            <separator
+                  name="com.mfg.application.separator1"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="com.mfg.application.actions.switchworkspace"
+                  id="sw"
+                  label="Switch Workspace"
+                  style="push">
+            </command>
+         </menu>
+         <menu
+               id="window"
+               label="Window"
+               mnemonic="w">
+         </menu>
+         <menu
+               id="help"
+               label="Help"
+               mnemonic="h">
+         </menu>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:edit?after=additions">
+         <command
+               commandId="org.eclipse.ui.edit.undo"
+               style="push">
+         </command>
+         <command
+               commandId="org.eclipse.ui.edit.redo"
+               style="push">
+         </command>
+         <separator
+               name="com.mfg.application.menu.edit.separator1"
+               visible="true">
+         </separator>
+         <command
+               commandId="org.eclipse.ui.edit.cut"
+               style="push">
+         </command>
+         <command
+               commandId="org.eclipse.ui.edit.copy"
+               style="push">
+         </command>
+         <command
+               commandId="org.eclipse.ui.edit.paste"
+               style="push">
+         </command>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?before=PerspectiveSpacer">
+         <toolbar
+               id="com.mfg.application.toolbar.main">
+            <command
+                  commandId="com.mfg.application.command.saveWorkspace"
+                  icon="icons/save_edit.gif"
+                  style="push">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="com.mfg.application.handler.SaveWorkspaceHandler"
+            id="com.mfg.application.command.saveWorkspace"
+            name="Save Workspace">
+      </command>
+      <command
+            id="com.mfg.application.actions.switchworkspace"
+            name="Switch Workspace">
+      </command>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="com.mfg.application.actions.SwitchWorkspaceHandler"
+            commandId="com.mfg.application.actions.switchworkspace">
+      </handler>
+   </extension>
+<extension
+      point="org.eclipse.ui.perspectiveExtensions">
+   <perspectiveExtension
+         targetID="com.mfg.application.perspective">
+      <view
+            id="com.mfg.symbols.ui.views.navigator"
+            minimized="false"
+            relationship="left"
+            relative="org.eclipse.ui.editorss">
+      </view>
+      <perspectiveShortcut
+            id="com.marketforecastgroup.dfsa.ui.perspective">
+      </perspectiveShortcut>
+   </perspectiveExtension>
+   <perspectiveExtension
+         targetID="com.marketforecastgroup.dfsa.ui.perspective">
+      <perspectiveShortcut
+            id="com.mfg.application.perspective">
+      </perspectiveShortcut>
+   </perspectiveExtension>
+</extension>
+<extension
+      id="product"
+      point="org.eclipse.core.runtime.products">
+   <product
+         application="com.mfg.application2.application"
+         name="MFG Product">
+      <property
+            name="windowImages"
+            value="/com.mfg.application/icons/16x16.32bits.gif,/com.mfg.application/icons/32x32.32bits.gif,/com.mfg.application/icons/48x48.32bits.gif,/com.mfg.application/icons/64x64.32bits.gif,/com.mfg.application/icons/128x128.32bits.gif">
+      </property>
+      <property
+            name="aboutText"
+            value="MFGRC&#x0A;Market Forecast Group Rich Client is based on Eclipse RCP&#x0A;&#x0A;Version: 1.0.0&#x0A;Build id: 20131125-0001&#x0A;&#x0A;Developed by MFG Team&#x0A;Designs by Julio Medina&#x0A;&#x0A;(C) Copyright  2014 - MFG. All rights reserved.&#x0A;&#x0A;This product and the acompanying materials are property of Giulio Rugarli.&#x0A;http://www.marketforecastgroup.com">
+      </property>
+      <property
+            name="aboutImage"
+            value="/com.mfg.application/icons/115x164.gif">
+      </property>
+      <property
+            name="appName"
+            value="MFG Product">
+      </property>
+		<property name="startupProgressRect" value="2,313,561,15"/>
+		<property name="startupMessageRect" value="7,290,441,20"/>
+		<property name="startupForegroundColor" value="000000"/>
+  <property
+        name="preferenceCustomization"
+        value="plugin_customization.ini">
+  </property>
+   </product>
+</extension>
+
+<extension
+      point="org.eclipse.ui.splashHandlers">
+   <splashHandler
+         class="com.mfg.application.splashHandlers.ExtensibleSplashHandler"
+         id="com.mfg.application.splashHandlers.extensible">
+   </splashHandler>
+   <splashHandlerProductBinding
+         productId="com.mfg.application.product"
+         splashId="com.mfg.application.splashHandlers.extensible">
+   </splashHandlerProductBinding>
+</extension>
+</plugin>

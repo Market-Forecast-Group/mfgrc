@@ -164,7 +164,7 @@
   </property>
    </product>
 </extension>
-<!--
+
 <extension
       point="org.eclipse.ui.splashHandlers">
    <splashHandler
@@ -177,6 +177,6 @@
    </splashHandlerProductBinding>
 </extension>
 
--->
+
 
 </plugin>

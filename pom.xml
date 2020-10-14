@@ -1,100 +1,144 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.mfg</groupId>
+  <groupId>com.mfg.product</groupId>
   <artifactId>releng</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
- <properties>
-  <tycho.version>2.0.0</tycho.version>
-  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  <eclipse-repo.url>http://download.eclipse.org/releases/latest</eclipse-repo.url>
- </properties>
+  <properties>
+    <tycho.version>2.0.0</tycho.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <!-- 
 
- <repositories>
-  <repository>
-   <id>eclipse-release</id>
-   <url>${eclipse-repo.url}</url>
-   <layout>p2</layout>
-  </repository>
- </repositories>
+      I commented this because the Eclipse repository is not available to Cuba.
+      So, I am setting an alternative mirror from UK (http://mirrorservice.org/sites/download.eclipse.org/eclipseMirror/)
+      Fuck the US embargo!
 
- <build>
-  <plugins>
-   <plugin>
-    <groupId>org.eclipse.tycho</groupId>
-    <artifactId>tycho-maven-plugin</artifactId>
-    <version>${tycho.version}</version>
-    <extensions>true</extensions>
-   </plugin>
-   <!--Enable the replacement of the SNAPSHOT version in the final product configuration-->
-   <plugin>
+
+      <eclipse-repo.url>http://download.eclipse.org/releases/latest</eclipse-repo.url> 
+
+-->
+    <eclipse-repo.url>http://mirrorservice.org/sites/download.eclipse.org/eclipseMirror/releases/2020-09</eclipse-repo.url>
+    <nebula-repo.url>http://mirrorservice.org/sites/download.eclipse.org/eclipseMirror/nebula/releases/latest/</nebula-repo.url>
+
+
+    <!-- This is the repository of the MFG Database -->
+    <mdb-repo.url>http://boniatillo.com/MFG/org.mfg.mdbplugin.update/</mdb-repo.url>
+
+  </properties>
+
+  <repositories>
+
+    <repository>
+      <id>eclipse-release</id>
+      <url>${eclipse-repo.url}</url>
+      <layout>p2</layout>
+    </repository>
+
+    <repository>
+      <id>nebula-release</id>
+      <url>${nebula-repo.url}</url>
+      <layout>p2</layout>
+    </repository>
+
+    <repository>
+      <id>mdb-release</id>
+      <url>${mdb-repo.url}</url>
+      <layout>p2</layout>
+    </repository>
+  </repositories>
+
+  <build>
+    <plugins>
+      <plugin>
         <groupId>org.eclipse.tycho</groupId>
-            <artifactId>tycho-packaging-plugin</artifactId>
-             <version>${tycho.version}</version>
-             <executions>
-              <execution>
-                <phase>package</phase>
-                <id>package-feature</id>
-                    <configuration>
-                        <finalName>${project.artifactId}_${unqualifiedVersion}.${buildQualifier}</finalName>
-                    </configuration>
-            </execution>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho.version}</version>
+        <extensions>true</extensions>
+      </plugin>
+      <!--Enable the replacement of the SNAPSHOT version in the final product configuration-->
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-packaging-plugin</artifactId>
+        <version>${tycho.version}</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <id>package-feature</id>
+            <configuration>
+              <finalName>${project.artifactId}_${unqualifiedVersion}.${buildQualifier}</finalName>
+            </configuration>
+          </execution>
         </executions>
-    </plugin>
-    <plugin>
-    <groupId>org.eclipse.tycho</groupId>
-    <artifactId>target-platform-configuration</artifactId>
-    <version>${tycho.version}</version>
-    <configuration>
-     <!-- Optional set the Java version your are using-->
-      <!--   <executionEnvironment>JavaSE-14</executionEnvironment>-->
-     <environments>
-      <environment>
-       <os>linux</os>
-       <ws>gtk</ws>
-       <arch>x86_64</arch>
-      </environment>
-      <environment>
-       <os>win32</os>
-       <ws>win32</ws>
-       <arch>x86_64</arch>
-      </environment>
-      <!-- <environment>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>target-platform-configuration</artifactId>
+        <version>${tycho.version}</version>
+        <configuration>
+          <!-- Optional set the Java version your are using-->
+          <!--   <executionEnvironment>JavaSE-14</executionEnvironment>-->
+          <environments>
+            <environment>
+              <os>linux</os>
+              <ws>gtk</ws>
+              <arch>x86_64</arch>
+            </environment>
+            <environment>
+              <os>win32</os>
+              <ws>win32</ws>
+              <arch>x86_64</arch>
+            </environment>
+            <!-- <environment>
        <os>macosx</os>
        <ws>cocoa</ws>
        <arch>x86_64</arch>
       </environment>
     -->
-     </environments>
-    </configuration>
-   </plugin>
-  </plugins>
- </build>
+          </environments>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
-  <modules>  
-      <module>com.mfg.dm</module>
-      <module>com.mfg.utils</module>
-      <module>com.mfg.persist.interfaces</module>
-      <module>com.mfg.broker</module>
-      <module>com.mfg.chart.model</module>
-      <module>com.mfg.logger</module>
-      <module>com.mfg.interfaces</module>
-      <module>com.mfg.inputdb.indicator</module>
-      <module>com.mfg.inputdb.prices</module>
-      <module>com.mfg.tradingdb</module>
-      <module>com.mfg.widget</module>
-      <module>com.mfg.dfs</module>
-      <module>com.mfg.ui</module>
-      <module>com.mfg.plstats</module>
-      <module>com.mfg.connector.csv</module>
-      <module>com.mfg.strategy.builder</module>
-      <module>com.mfg.symbols</module>
-      <module>com.mfg.chart</module>
-      <module>com.mfg.strategy.automatic</module>
-      <module>com.mfg.connector.dfs</module>
-      <module>com.marketforecastgroup.dfsa</module>
-      <module>com.marketforecastgroup.logger.ui</module>
-      <module>com.marketforescastgroup.logger</module>
- </modules>
+  <modules>
+
+    <module>product</module>
+    <module>com.mfg.product.features</module>
+    <module>com.mfg.application2</module>
+    <module>com.mfg.application.feature</module>
+    <module>com.mfg.web</module>
+    <module>com.mfg.dm</module>
+    <module>com.mfg.utils</module>
+    <module>com.mfg.persist.interfaces</module>
+    <module>com.mfg.broker</module>
+    <module>com.mfg.chart.model</module>
+    <module>com.mfg.logger</module>
+    <module>com.mfg.interfaces</module>
+    <module>com.mfg.inputdb.indicator</module>
+    <module>com.mfg.inputdb.prices</module>
+    <module>com.mfg.tradingdb</module>
+    <module>com.mfg.widget</module>
+    <module>com.mfg.dfs</module>
+    <module>com.mfg.ui</module>
+    <module>com.mfg.plstats</module>
+    <module>com.mfg.connector.csv</module>
+    <module>com.mfg.strategy.builder</module>
+    <module>com.mfg.strategy.manual</module>
+    <module>com.mfg.strategy.automatic</module>
+    <module>com.mfg.chart</module>
+    <module>com.mfg.jogl</module>
+    <module>com.mfg.symbols</module>
+    <module>com.mfg.symbols.csv</module>
+    <module>com.mfg.symbols.dfs</module>
+    <module>com.mfg.connector.dfs</module>
+    <module>com.mfg.tea</module>
+    <module>com.mfg.help</module>
+    <module>com.marketforecastgroup.logger.ui</module>
+    <module>com.marketforescastgroup.logger</module>
+    <module>com.marketforecastgroup.dfsa</module>
+    <module>com.marketforecastgroup.dfsa.features</module>
+    <module>com.marketforecastgroup.dfsa.app</module>
+
+  </modules>
 </project>
