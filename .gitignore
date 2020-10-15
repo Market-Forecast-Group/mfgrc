@@ -49,8 +49,6 @@ Setup\base\MFG
 
 ext/json.jar
 *.class
-*.dll
-*.so
 *.orig
 Thumbs.db
 *.bak
